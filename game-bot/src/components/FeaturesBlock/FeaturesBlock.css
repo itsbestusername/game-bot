@@ -1,0 +1,58 @@
+.features-block {
+    min-height: 1135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 10px 20px;
+    background-color: #F6F6F6;
+}
+
+.features-img {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-image {
+    width: 300px;
+    height: 500px;
+}
+
+.arrow_area {
+    padding-left: 35px;
+}
+
+.arrow_area-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrow_area-button:hover {
+    background-color: #FF9B05;
+}
+
+.arrow-img {
+    width: 50px;
+    height: 40px;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_watch-button {
+    background-color: #FF3B3B;
+}
+
+.watch-button-img {
+    width: 26px;
+    height: 26px;
+}

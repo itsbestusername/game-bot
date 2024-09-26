@@ -1,0 +1,121 @@
+.header_content {
+width: 100%;
+min-height: 1015px;
+display: flex;
+position: relative;
+z-index: 1;
+}
+
+.layout {
+    background: url("../../images/backVector.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 33%;
+    z-index: -2;
+}
+
+.back-picture {
+    background: url("../../images/headquarters.png"); 
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -7%;
+    left: 0;
+    z-index: -1;
+}
+
+.left-back-circle {
+    background: url(../../images/left-back-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 17%;
+    left: 2%;
+    z-index: -1;
+}
+
+.right-back-circle {
+    background: url(../../images/right-back-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20%;
+    height: 23%;
+    position: absolute;
+    top: 40%;
+    left: 79%;
+    z-index: -1;
+}
+
+.header-text-area {
+color: white;
+display: flex;
+flex-direction: column;
+gap: 25px;
+align-items: start;
+margin-left: 409px;
+margin-top: 235px;
+}
+
+.header-title {
+    text-transform: uppercase; 
+    text-align: left;
+    font-size: 48px;
+    width: 553px;
+    height: 118px;
+    max-width: 553px;
+}
+
+.title-line {
+    width: 110px;
+    height: 5px;
+    background: linear-gradient(to right, #E97004, #FF4900);
+}
+
+.header-text {
+    max-width: 553px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+.buttons_area {
+display: flex;
+gap: 30px;
+}
+
+.button {
+    font-family: inherit;
+    border: solid 1px black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.button-arrow {
+    width: 30px;
+    height: 20px;
+}
+
+.button-video {
+background-color: transparent;
+}
+
+.img-area {
+    width: 721px;
+    height: 813px;
+    margin-top: 9%;
+    margin-left: 6%;
+}

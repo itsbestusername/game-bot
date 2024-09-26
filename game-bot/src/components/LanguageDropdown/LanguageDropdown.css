@@ -1,0 +1,62 @@
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #211F1F;
+    padding: 19px 16px;
+    border-radius: 4px;
+    width: 123px;
+    height: 58px;
+}
+
+.flag-icon {
+    width: 30px;
+    height: 20px;
+}
+
+.language-name {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.arrow {
+    font-size: 17px; /* размер стрелки */
+    line-height: 1; /* Чтобы стрелки не искажались по вертикали */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #211F1F;
+    opacity: 0.8;
+    border-radius: 4px;
+    width: 123px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #211F1F;
+}
+
+.selected {
+    background-color: #211F1F;
+}

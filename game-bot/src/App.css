@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../src/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../src/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, nav {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none; /* Убирает стандартные маркеры */
+}
+
+.App {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  height: 100vh; /* Высота фона на весь экран */
+  width: 100vw; /* Ширина фона на весь экран */
+  background: linear-gradient(to right, #211F1F, #323144);
+}

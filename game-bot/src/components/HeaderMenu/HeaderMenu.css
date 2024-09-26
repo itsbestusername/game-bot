@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка для всех якорных ссылок */
+}
+
+
+.header-container {
+    background: linear-gradient(to right, #211F1F, #323144);
+    text-transform: uppercase; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    position: fixed; /* Закрепляем меню */
+    top: 0; /* Привязываем его к верхней части окна */
+    left: 0;
+    width: 100%; /* Ширина меню на всю страницу */
+    padding: 55px 411px;
+    z-index: 2; /* Устанавливаем высокий z-index, чтобы меню было выше контента */
+}
+
+.header-logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 36px;
+    color: #CF4D4F;
+}
+
+.menu-list {
+    display: flex;
+    margin-left: 28px;
+    gap: 165px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    position: relative;
+}
+
+a {
+color: white;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Отступ от текста */
+    width: 100%; /* Начальное состояние черточки */
+    height: 2px; /* Толщина черточки */
+    background-color: #E96F05; /* Цвет черточки */
+    transform: scaleX(0); /* Линия сжимается до 0 (невидима) */
+    transition: transform 0.3s ease; /* Плавное изменение ширины */
+    transform-origin: center; /* Анимация начинается с центра */
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+.active::after {
+    transform: scaleX(1);
+}
+
+/* Стили для выпадающего списка языков */
+.language-dropdown {
+    position: relative;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+option {
+    padding: 10px;
+}
