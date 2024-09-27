@@ -1,11 +1,23 @@
 .features-block {
     min-height: 1135px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    gap: 200px;
-    padding: 10px 20px;
+    gap: 160px;
+    padding: 110px 20px 0px;
     background-color: #F6F6F6;
+    position: relative;
+}
+
+.features-back-circles {
+    background-image: url(../../images/features-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 17px;
+    left: 0%;
 }
 
 .features-img {
@@ -43,16 +55,34 @@
 .features-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 60px;
+    max-width: 657px;
 }
 
-.features_watch-button {
-    background-color: #FF3B3B;
+.features-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-.watch-button-img {
-    width: 26px;
-    height: 26px;
+.features-title::before {
+    content: '';
+    background-image: url(../../images/features-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4%;
+    height: 5%;
+    position: absolute;
+    top: 6%;
+    left: 44%;
+}
+
+.features-list {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
 }

@@ -1,0 +1,30 @@
+.buttons_area {
+    display: flex;
+    gap: 45px;
+    margin-top: 35px;
+}
+
+.button {
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    width: 305px;
+    height: 71px;
+    border-radius: 10px;
+}
+
+.button-video {
+    background-color: #211F1F;
+    padding: 22px 18px;
+}
+
+.button-buy {
+    background-color: #E76F04;
+    border: none;
+    padding: 22px 34px;
+    }

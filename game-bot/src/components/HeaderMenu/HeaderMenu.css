@@ -19,7 +19,6 @@ html {
 }
 
 .header-logo {
-    font-family: 'Manrope', sans-serif;
     font-size: 36px;
     color: #CF4D4F;
 }
@@ -28,7 +27,6 @@ html {
     display: flex;
     margin-left: 28px;
     gap: 165px;
-    font-family: 'Manrope', sans-serif;
     font-size: 20px;
 }
 
@@ -38,7 +36,7 @@ html {
 }
 
 a {
-color: white;
+    color: white;
 }
 
 a::after {
