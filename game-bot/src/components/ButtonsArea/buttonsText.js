@@ -6,5 +6,5 @@ export const buttonsText = {
 	en: {
 		buy: 'Try free',
 		watchButton: 'Watch the demonstration',
-	}
+	},
 };

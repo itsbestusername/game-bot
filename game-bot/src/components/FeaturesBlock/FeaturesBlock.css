@@ -4,16 +4,28 @@
     align-items: start;
     justify-content: center;
     gap: 160px;
-    padding: 110px 20px 0px;
+    padding: 200px 20px 0px;
     background-color: #F6F6F6;
     position: relative;
 }
 
-.features-background {
-    background-image: url(../../images/features-background.png);
+.girl-background {
+    background-image: url(../../images/girl-back.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: right;
     width: 100%;
+    height: 68%;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+}
+
+.features-background {
+    background-image: url(../../images/features-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 93%;
     height: 98%;
     position: absolute;
     top: 17px;
@@ -75,7 +87,7 @@
     width: 4%;
     height: 5%;
     position: absolute;
-    top: 6%;
+    top: 14%;
     left: 44%;
 }
 
@@ -112,4 +124,40 @@
     background-image: url(../../images/marker.png);
     background-size: contain; /* Масштабирование изображения */
     background-repeat: no-repeat; /* Отключаем повтор */
+}
+
+@media (min-width:1440px) and (max-width:1699px) {
+    .girl-background {
+        display: none;
+    }
+}
+
+@media (min-width:1440px) and (max-width:1919px) {
+    .features-block {
+        min-height: 990px;
+        padding: 220px 20px 0px;
+    }
+
+    .features-content {
+        gap: 50px;
+    }
+
+    .features-title {
+        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+    }
+
+    .features-title::before {
+        top: 18%;
+        left: 43%;
+    }
+
+    .features-list {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .features-background {
+        left: 6%;
+    }
 }

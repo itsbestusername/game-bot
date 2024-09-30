@@ -8,7 +8,7 @@
 }
 
 .layout {
-    background: url("../../images/backVector.png"); 
+    background: url("../../images/header-bottom-pic.png"); 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -19,28 +19,15 @@
     z-index: -2;
 }
 
-.back-picture {
-    background: url("../../images/headquarters.png"); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left bottom;
-    width: 42%;
-    height: 42%;
-    position: absolute;
-    top: 51%;
-    left: 0;
-    z-index: -1;
-}
-
 .back-circles {
     background: url(../../images/header-circles.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    min-width: 86%;
-    min-height: 56%;
+    width: 86%;
+    height: 56%;
     position: absolute;
-    top: 8%;
+    top: 9%;
     left: 7%;
     z-index: -1;
 } 
@@ -51,7 +38,7 @@
     flex-direction: column;
     gap: 25px;
     align-items: start;
-    margin-left: 409px;
+    margin-left: 21%;
     margin-top: 235px;
 }
 
@@ -94,8 +81,88 @@
 }
 
 .img-area {
-    width: 721px;
-    height: 813px;
-    margin-top: 9%;
+    max-width: 790px;
+    max-height: 812px;
+    margin-top: 169px;
     margin-left: 1%;
+}
+
+.hero-img {
+    height: 100%;
+}
+
+@media (min-width:1440px) and (max-width:1699px) {
+    .header_content {
+        height: 100%;
+    }
+
+    .header-text-area {
+        margin-left: 13%;
+        margin-top: 266px;
+    }
+
+    .layout {
+        display: none;
+    }
+
+    .back-circles {
+        display: none;
+    }
+
+    .header-title {
+        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+    }
+
+    .img-area {
+        max-width: 626px;
+        max-height: 760px;
+    }
+}
+
+@media (min-width:1700px) and (max-width:1919px) {
+    .back-circles {
+        display: none;
+    }
+}
+
+@media ((min-width: 2100px)) {
+
+    .header-text-area {
+        margin-left: 24%;
+    }
+
+    .layout {
+        top: 37%;
+    }
+
+}
+
+@media ((min-width: 2300px)) {
+
+    .header-text-area {
+        margin-left: 27%;
+    }
+
+    .layout {
+        background-size: cover;
+        top: 45%;
+    }
+    
+}
+
+@media ((min-width: 2600px)) {
+
+    .header-text-area {
+        margin-left: 32%;
+    }
+
+    .layout {
+        background-size: cover;
+        top: 48%;
+    }
+
+    .back-circles {
+        left: 10%;
+    }
+        
 }

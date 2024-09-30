@@ -13,8 +13,8 @@
     background-color: #211F1F;
     padding: 19px 16px;
     border-radius: 4px;
-    width: 123px;
-    height: 58px;
+    min-width: 123px;
+    min-height: 58px;
 }
 
 .flag-icon {
@@ -23,12 +23,12 @@
 }
 
 .language-name {
-    font-size: 17px;
+    font-size: clamp(1.0625rem, 0.6904rem + 0.3101vw, 1.5625rem);
     font-weight: normal;
 }
 
 .arrow {
-    font-size: 17px; /* размер стрелки */
+    font-size: clamp(1.0625rem, 0.6904rem + 0.3101vw, 1.5625rem); /* размер стрелки */
     line-height: 1; /* Чтобы стрелки не искажались по вертикали */
 }
 

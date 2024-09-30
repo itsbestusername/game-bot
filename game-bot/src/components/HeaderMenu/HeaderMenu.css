@@ -14,12 +14,12 @@ html {
     top: 0; /* Привязываем его к верхней части окна */
     left: 0;
     width: 100%; /* Ширина меню на всю страницу */
-    padding: 55px 411px;
+    padding: 40px 411px;
     z-index: 2; /* Устанавливаем высокий z-index, чтобы меню было выше контента */
 }
 
 .header-logo {
-    font-size: 36px;
+    font-size: clamp(2.25rem, 1.7849rem + 0.3876vw, 2.875rem);
     color: #CF4D4F;
 }
 
@@ -27,7 +27,7 @@ html {
     display: flex;
     margin-left: 28px;
     gap: 165px;
-    font-size: 20px;
+    font-size: clamp(1.25rem, 0.7849rem + 0.3876vw, 1.875rem);
 }
 
 .menu-list-item a {
@@ -62,15 +62,14 @@ html {
     position: relative;
 }
 
-select {
-    padding: 5px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    cursor: pointer;
+@media (min-width:1440px) and (max-width:1699px) {
+    .header-container {
+        padding: 40px 300px;
+    }
 }
 
-option {
-    padding: 10px;
+@media (min-width:1700px) and (max-width:1919px) {
+    .header-container {
+        padding: 40px 400px;
+    }
 }

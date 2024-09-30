@@ -7,7 +7,6 @@ export const HeaderContent = ({ language }) => {
 	return (
 		<div className="header_content">
 			<div className="layout"></div>
-			<div className="back-picture"></div>
 			<div className="back-circles"></div>
 			<div className="header-text-area">
 				<h1 className="header-title">{headerText[language].title}</h1>
@@ -17,7 +16,7 @@ export const HeaderContent = ({ language }) => {
 				<ButtonsArea language={language} />
 			</div>
 			<div className="img-area">
-				<img src={heroes} alt="heroes"></img>
+				<img className="hero-img" src={heroes} alt="heroes"></img>
 			</div>
 		</div>
 	);
