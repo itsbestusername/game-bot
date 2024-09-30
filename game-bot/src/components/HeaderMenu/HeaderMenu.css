@@ -33,13 +33,10 @@ html {
 .menu-list-item a {
     text-decoration: none;
     position: relative;
-}
-
-a {
     color: white;
 }
 
-a::after {
+.menu-list-item a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -52,11 +49,11 @@ a::after {
     transform-origin: center; /* Анимация начинается с центра */
 }
 
-a:hover::after {
+.menu-list-item a:hover::after {
     transform: scaleX(1);
 }
 
-.active::after {
+.menu-list-item a.active::after {
     transform: scaleX(1);
 }
 

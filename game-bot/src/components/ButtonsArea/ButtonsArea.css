@@ -16,6 +16,8 @@
     width: 305px;
     height: 71px;
     border-radius: 10px;
+    position: relative; 
+    z-index: 1; /* Кнопки должны быть выше по слоям */
 }
 
 .button-video {
