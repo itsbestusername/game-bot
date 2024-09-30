@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/game-bot/static/css/main.64c4fbe5.css",
+    "main.js": "/game-bot/static/js/main.f14bf512.js",
+    "static/js/453.1ef4e09f.chunk.js": "/game-bot/static/js/453.1ef4e09f.chunk.js",
+    "static/media/header-heroes.png": "/game-bot/static/media/header-heroes.203bd414a35bca5159e6.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/game-bot/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "static/media/features-background.png": "/game-bot/static/media/features-background.cda573068b0d4259f701.png",
+    "static/media/headquarters.png": "/game-bot/static/media/headquarters.35d3f8b37efc43e43248.png",
+    "static/media/Manrope-VariableFont_wght.ttf": "/game-bot/static/media/Manrope-VariableFont_wght.4afb283bba326df875f6.ttf",
+    "static/media/mob.png": "/game-bot/static/media/mob.0cc81ca40cd4d2239038.png",
+    "static/media/header-circles.png": "/game-bot/static/media/header-circles.380bdac87da0db2d025e.png",
+    "index.html": "/game-bot/index.html",
+    "static/media/rus.svg": "/game-bot/static/media/rus.b41328698709cf180d8d19cd65d03050.svg",
+    "main.64c4fbe5.css.map": "/game-bot/static/css/main.64c4fbe5.css.map",
+    "main.f14bf512.js.map": "/game-bot/static/js/main.f14bf512.js.map",
+    "453.1ef4e09f.chunk.js.map": "/game-bot/static/js/453.1ef4e09f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64c4fbe5.css",
+    "static/js/main.f14bf512.js"
+  ]
+}
