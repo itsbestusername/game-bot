@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/game-bot/static/css/main.7e265d3a.css",
-    "main.js": "/game-bot/static/js/main.2f021445.js",
+    "main.css": "/game-bot/static/css/main.ffa9ab18.css",
+    "main.js": "/game-bot/static/js/main.555f6886.js",
     "static/js/453.1ef4e09f.chunk.js": "/game-bot/static/js/453.1ef4e09f.chunk.js",
     "static/media/header-heroes.png": "/game-bot/static/media/header-heroes.203bd414a35bca5159e6.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/game-bot/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
-    "static/media/features-background.png": "/game-bot/static/media/features-background.cda573068b0d4259f701.png",
-    "static/media/headquarters.png": "/game-bot/static/media/headquarters.35d3f8b37efc43e43248.png",
+    "static/media/header-bottom-pic.png": "/game-bot/static/media/header-bottom-pic.f37b5475484ed2125d8e.png",
+    "static/media/girl-back.png": "/game-bot/static/media/girl-back.b33135eb0d45abaa778d.png",
     "static/media/Manrope-VariableFont_wght.ttf": "/game-bot/static/media/Manrope-VariableFont_wght.4afb283bba326df875f6.ttf",
     "static/media/mob.png": "/game-bot/static/media/mob.0cc81ca40cd4d2239038.png",
+    "static/media/features-back.png": "/game-bot/static/media/features-back.9b66f72fcf84e2aaa073.png",
     "static/media/header-circles.png": "/game-bot/static/media/header-circles.380bdac87da0db2d025e.png",
     "index.html": "/game-bot/index.html",
     "static/media/rus.svg": "/game-bot/static/media/rus.b41328698709cf180d8d19cd65d03050.svg",
-    "main.7e265d3a.css.map": "/game-bot/static/css/main.7e265d3a.css.map",
-    "main.2f021445.js.map": "/game-bot/static/js/main.2f021445.js.map",
+    "main.ffa9ab18.css.map": "/game-bot/static/css/main.ffa9ab18.css.map",
+    "main.555f6886.js.map": "/game-bot/static/js/main.555f6886.js.map",
     "453.1ef4e09f.chunk.js.map": "/game-bot/static/js/453.1ef4e09f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e265d3a.css",
-    "static/js/main.2f021445.js"
+    "static/css/main.ffa9ab18.css",
+    "static/js/main.555f6886.js"
   ]
 }
