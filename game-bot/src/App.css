@@ -32,7 +32,7 @@ a {
 .App {
   font-family: 'Manrope', sans-serif;
   text-align: center;
-  min-height: 100vh; 
+  height: 100%; 
   width: 100%;
   background: linear-gradient(to right, #211F1F, #323144);
   margin: 0 auto;

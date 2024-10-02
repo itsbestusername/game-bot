@@ -11,7 +11,7 @@
     background: url("../../images/header-bottom-pic.png"); 
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: left bottom;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -24,10 +24,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 86%;
-    height: 56%;
+    width: 86vw;
+    height: 32vh;
     position: absolute;
-    top: 9%;
+    top: 11%;
     left: 7%;
     z-index: -1;
 } 
@@ -44,14 +44,13 @@
 
 .header-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
+    font-size: clamp(3rem, 1.9375rem + 0.8854vw, 4.0625rem);
     font-weight: 800;
     position: relative;
     text-transform: uppercase; 
     text-align: left;
-    width: 553px;
-    height: 118px;
-    max-width: 553px;
+    width: 30vw;
+    height: 6vh;
 }
 
 .header-title::before {
@@ -59,12 +58,12 @@
     background-image: url(../../images/arrows.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 288%;
-    height: 504%;
+    width: 100vw;
+    height: 28vh;
     position: absolute;
-    top: -39%;
-    left: -14%;
-    z-index: -1; /* Убедитесь, что псевдоэлемент находится ниже по z-index */
+    top: -42%;
+    left: -12%;
+    z-index: -1;
     pointer-events: none; /* Это предотвратит блокирование кликов */
 }
 
@@ -132,7 +131,11 @@
     }
 
     .layout {
-        top: 37%;
+        top: 40%;
+    }
+
+    .back-circles {
+        top: 15%;
     }
 
 }
@@ -144,8 +147,7 @@
     }
 
     .layout {
-        background-size: cover;
-        top: 45%;
+        top: 43%;
     }
     
 }
@@ -157,12 +159,24 @@
     }
 
     .layout {
-        background-size: cover;
-        top: 48%;
+        top: 44%;
     }
 
     .back-circles {
         left: 10%;
     }
         
+}
+
+@media ((min-width: 3150px)) {
+    .back-circles {
+        width: 100vw;
+        height: 35vh;
+        left: 3%;
+    }
+        
+    .header-title::before {
+        height: 36vh;
+        top: -80%;
+    }
 }
