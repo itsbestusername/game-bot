@@ -1,6 +1,6 @@
 .header_content {
     width: 100%;
-    min-height: 1015px;
+    height: 31vh;
     display: flex;
     position: relative;
     z-index: 1;
@@ -59,7 +59,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 28vh;
+    height: 29vh;
     position: absolute;
     top: -42%;
     left: -12%;
@@ -81,14 +81,103 @@
 
 .img-area {
     max-width: 790px;
-    max-height: 812px;
-    margin-top: 169px;
+    max-height: 790px;
+    margin-top: 170px;
     margin-left: 1%;
 }
 
 .hero-img {
     height: 100%;
 }
+
+@media (max-width:376px) {
+    .header_content {
+        height: 780px;
+        flex-direction: column;
+    }
+
+    .layout {
+        display: none;
+    }
+
+    .back-circles {
+        background: url(../../images/back-circles-mob.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100vw;
+        height: 32vh;
+        position: absolute;
+        top: 47%;
+        left: 0%;
+        z-index: -1;
+    } 
+
+    .header-text-area {
+        margin: 0;
+        padding: 120px 26px 0;
+        align-items: center;
+        gap: 19px;
+    }
+
+    .header-title {
+        font-size: 28px;
+        width: 323px;
+        text-align: center;
+    }
+
+    .header-title::before {
+        content: '';
+        background-image: url(../../images/arrow-header-mob.png);
+        width: 23vw;
+        height: 23vh;
+        top: -74%;
+        left: 4%;
+    }
+
+    .header-text {
+        max-width: 343px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .arrow-text {
+        position: relative;
+    }
+
+    .arrow-text::after {
+        content: '';
+        background-image: url(../../images/text-header-mob.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 22vw;
+        height: 22vh;
+        position: absolute;
+        top: -64%;
+        left: 82%;
+        z-index: -1;
+        pointer-events: none; /* Это предотвратит блокирование кликов */
+    }
+
+    .title-line {
+        width: 0;
+    }
+
+    .img-area {
+        width: 100%;
+        max-height: 400px;
+        margin-top: 29px;
+        margin-left: 0;
+    }
+
+    .hero-img {
+        width: 592px;
+        height: 567px;
+    }
+}
+
+
+
 
 @media (min-width:1440px) and (max-width:1699px) {
     .header_content {
@@ -138,6 +227,10 @@
         top: 15%;
     }
 
+    .img-area {
+        margin-left: 2%;
+    }
+
 }
 
 @media ((min-width: 2300px)) {
@@ -148,6 +241,10 @@
 
     .layout {
         top: 43%;
+    }
+
+    .header-title::before {
+        height: 31vh;
     }
     
 }
@@ -166,17 +263,27 @@
         left: 10%;
     }
         
+    .img-area {
+        margin-left: 0;
+    }
+    .header-title::before {
+        height: 34vh;
+    }
 }
 
-@media ((min-width: 3150px)) {
+@media ((min-width: 3100px)) {
     .back-circles {
         width: 100vw;
         height: 35vh;
         left: 3%;
     }
+
+    .header-title {
+        font-size: 64px;
+    }
         
     .header-title::before {
-        height: 36vh;
+        height: 37vh;
         top: -80%;
     }
 }

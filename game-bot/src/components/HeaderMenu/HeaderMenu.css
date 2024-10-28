@@ -62,6 +62,25 @@ html {
     position: relative;
 }
 
+@media (max-width:376px) {
+    .header-container {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .header-logo {
+        font-size: 24px;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+        margin-left: 0;
+    }
+}
+
 @media (min-width:1440px) and (max-width:1699px) {
     .header-container {
         padding: 40px 300px;

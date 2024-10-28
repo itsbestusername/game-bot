@@ -60,3 +60,35 @@
 .selected {
     background-color: #211F1F;
 }
+
+@media (max-width:376px) {
+    .selected-language {
+        gap: 5px;
+        padding: 5px;
+        border-radius: 4px;
+        min-width: 66px;
+        min-height: 36px;
+    }
+
+    .flag-icon {
+        width: 20px;
+        height: 14px;
+    }
+
+    .language-name {
+        font-size: 12px;
+    }
+
+    .arrow {
+        font-size: 12px; /* размер стрелки */
+    }
+
+    .dropdown-menu {
+        width: 66px;
+    }
+
+    .dropdown-item {
+        gap: 5px;
+        font-size: 12px;
+    }
+}
