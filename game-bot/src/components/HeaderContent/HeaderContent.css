@@ -49,8 +49,8 @@
     position: relative;
     text-transform: uppercase; 
     text-align: left;
-    width: 30vw;
-    height: 6vh;
+    width: 37vw;
+    height: 4vh;
 }
 
 .header-title::before {
@@ -58,10 +58,10 @@
     background-image: url(../../images/arrows.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 29vh;
+    width: 40vw;
+    height: 19vh;
     position: absolute;
-    top: -42%;
+    top: -41%;
     left: -12%;
     z-index: -1;
     pointer-events: none; /* Это предотвратит блокирование кликов */

@@ -7,19 +7,19 @@
     padding: 200px 20px 0px;
     background-color: #F6F6F6;
     position: relative;
-    overflow: hidden;
 }
 
 .girl-background {
-    background-image: url(../../images/girl-back.png);
+    background-image: url(../../images/character\ pic.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
-    width: 100vw;
-    height: 36vh;
+    width: 32vw;
+    height: 32vh;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -344px;
+    z-index: 2;
 }
 
 .features-background {

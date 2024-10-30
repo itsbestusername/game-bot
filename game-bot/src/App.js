@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { HeaderMenu } from './components/HeaderMenu/HeaderMenu';
 import { HeaderContent } from './components/HeaderContent/HeaderContent';
 import { FeaturesBlock } from './components/FeaturesBlock/FeaturesBlock';
+import { TariffsBlock } from './components/TariffsBlock/TariffsBlock';
 
 function App() {
 	const [activeSection, setActiveSection] = useState('home');
@@ -55,6 +56,10 @@ function App() {
 
 				<section id="features">
 					<FeaturesBlock language={language} />
+				</section>
+
+				<section id="tariffs">
+					<TariffsBlock language={language} />
 				</section>
 			</main>
 		</div>
