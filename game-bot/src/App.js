@@ -22,6 +22,8 @@ function App() {
 						setActiveSection('features');
 					} else if (entry.target.id === 'home') {
 						setActiveSection('home');
+					} else if (entry.target.id === 'tariffs') {
+						setActiveSection('tariffs');
 					}
 				}
 			});
@@ -29,14 +31,17 @@ function App() {
 
 		const homeSection = document.querySelector('#home');
 		const featuresSection = document.querySelector('#features');
+		const tariffsSection = document.querySelector('#tariffs');
 
 		if (homeSection) observer.observe(homeSection);
 		if (featuresSection) observer.observe(featuresSection);
+		if (tariffsSection) observer.observe(tariffsSection);
 
 		// Очистка наблюдателя при размонтировании компонента
 		return () => {
 			if (homeSection) observer.unobserve(homeSection);
 			if (featuresSection) observer.unobserve(featuresSection);
+			if (tariffsSection) observer.observe(tariffsSection);
 		};
 	}, []);
 
