@@ -16,7 +16,9 @@ export const HeaderContent = ({ language }) => {
 				</h1>
 				<div className="title-line"></div>
 				<p className="header-text">{headerText[language].text1}</p>
-				<p className="header-text arrow-text">{headerText[language].text2}</p>
+				<p className="header-text arrow-text">
+					{headerText[language].text2}
+				</p>
 				<ButtonsArea language={language} />
 			</div>
 			<div className="img-area">

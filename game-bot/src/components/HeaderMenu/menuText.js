@@ -8,6 +8,6 @@ export const menuText = {
 	en: {
 		home: 'Home',
 		features: 'Features',
-		tariffs: 'Tariffs'
+		tariffs: 'Tariffs',
 	},
 };
