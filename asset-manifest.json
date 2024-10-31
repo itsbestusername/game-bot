@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/game-bot/static/css/main.ffa9ab18.css",
-    "main.js": "/game-bot/static/js/main.555f6886.js",
+    "main.css": "/game-bot/static/css/main.57611a77.css",
+    "main.js": "/game-bot/static/js/main.3d25ec3e.js",
     "static/js/453.1ef4e09f.chunk.js": "/game-bot/static/js/453.1ef4e09f.chunk.js",
-    "static/media/header-heroes.png": "/game-bot/static/media/header-heroes.203bd414a35bca5159e6.png",
+    "static/media/header-heroes.png": "/game-bot/static/media/header-heroes.e477d11a64dc07b26990.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/game-bot/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
     "static/media/header-bottom-pic.png": "/game-bot/static/media/header-bottom-pic.f37b5475484ed2125d8e.png",
-    "static/media/girl-back.png": "/game-bot/static/media/girl-back.b33135eb0d45abaa778d.png",
+    "static/media/character pic.png": "/game-bot/static/media/character pic.2943f72795a57cb0fd3c.png",
     "static/media/Manrope-VariableFont_wght.ttf": "/game-bot/static/media/Manrope-VariableFont_wght.4afb283bba326df875f6.ttf",
     "static/media/mob.png": "/game-bot/static/media/mob.0cc81ca40cd4d2239038.png",
     "static/media/features-back.png": "/game-bot/static/media/features-back.9b66f72fcf84e2aaa073.png",
     "static/media/header-circles.png": "/game-bot/static/media/header-circles.380bdac87da0db2d025e.png",
+    "static/media/tariffs-layout.png": "/game-bot/static/media/tariffs-layout.94354f768c1a3a631b08.png",
     "index.html": "/game-bot/index.html",
     "static/media/rus.svg": "/game-bot/static/media/rus.b41328698709cf180d8d19cd65d03050.svg",
-    "main.ffa9ab18.css.map": "/game-bot/static/css/main.ffa9ab18.css.map",
-    "main.555f6886.js.map": "/game-bot/static/js/main.555f6886.js.map",
+    "main.57611a77.css.map": "/game-bot/static/css/main.57611a77.css.map",
+    "main.3d25ec3e.js.map": "/game-bot/static/js/main.3d25ec3e.js.map",
     "453.1ef4e09f.chunk.js.map": "/game-bot/static/js/453.1ef4e09f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffa9ab18.css",
-    "static/js/main.555f6886.js"
+    "static/css/main.57611a77.css",
+    "static/js/main.3d25ec3e.js"
   ]
 }
