@@ -26,7 +26,7 @@ html {
 .menu-list {
     display: flex;
     margin-left: 28px;
-    gap: 165px;
+    gap: 95px;
     font-size: clamp(1.25rem, 0.7849rem + 0.3876vw, 1.875rem);
 }
 

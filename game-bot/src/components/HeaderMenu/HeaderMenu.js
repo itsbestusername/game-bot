@@ -23,6 +23,14 @@ export const HeaderMenu = ({ activeSection, language, onLanguageChange }) => {
 						{menuText[language].features}
 					</a>
 				</li>
+				<li className="menu-list-item">
+					<a
+						className={activeSection === 'tariffs' ? 'active' : ''}
+						href="#tariffs"
+					>
+						{menuText[language].tariffs}
+					</a>
+				</li>
 			</ul>
 			<LanguageDropdown
 				language={language}

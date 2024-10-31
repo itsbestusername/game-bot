@@ -147,7 +147,7 @@
     }
 
     .features-title::before {
-        top: 18%;
+        top: 16%;
         left: 43%;
     }
 
@@ -156,19 +156,20 @@
     }
 }
 
+@media (min-width: 2100px) {
+    .features-background {
+        width: 80vw;
+        left: 6%;
+    }
+}
+
 @media (min-width: 2500px) {
     .features-background {
-        left: 6%;
+        display: none;
     }
 
     .features-title::before {
         left: 46%;
-    }
-}
-
-@media (min-width: 2700px) {
-    .features-background {
-        left: 16%;
     }
 }
 
