@@ -1,7 +1,5 @@
 import './FeaturesBlock.css';
-import { useState, useEffect } from 'react';
-// import rightArrow from '../../images/black right arrow.png';
-// import leftArrow from '../../images/black left arrow.png';
+import { useState, useEffect, useCallback  } from 'react';
 import { ButtonsArea } from '../ButtonsArea/ButtonsArea';
 import { featuresText } from './featuresText';
 
@@ -13,15 +11,10 @@ export const FeaturesBlock = ({ language }) => {
 	const totalSlides = featuresText[language].features.length;
 
 	// Функции для смены слайдов
-	const nextSlide = () => {
+	// Оборачиваем функцию в useCallback, чтобы она не пересоздавалась
+	const nextSlide = useCallback(() => {
 		setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-	};
-
-	const prevSlide = () => {
-		setCurrentSlide((prevSlide) =>
-			prevSlide === 0 ? totalSlides - 1 : prevSlide - 1,
-		);
-	};
+	}, [totalSlides]);
 
 	// Данные текущего слайда
 	const currentFeature = featuresText[language].features[currentSlide];
@@ -30,7 +23,7 @@ export const FeaturesBlock = ({ language }) => {
 	useEffect(() => {
 		const interval = setInterval(nextSlide, 3000); // Смена каждые 3 секунд
 		return () => clearInterval(interval); // Очистка интервала при размонтировании компонента
-	}, [currentSlide]);
+	}, [nextSlide]);
 
 	return (
 		<div className="features-block">
@@ -39,26 +32,10 @@ export const FeaturesBlock = ({ language }) => {
 			<div className="features-img">
 				{/* Отображение текущего слайда */}
 				<img
-					className="phone-image"
+					className="feature-image-item"
 					src={currentFeature.image} // Отображение изображения текущего слайда
 					alt={`Slide ${currentSlide + 1}`}
 				/>
-				{/* <div className="arrow_area">
-					<button className="arrow_area-button">
-						<img
-							className="arrow-img"
-							src={leftArrow}
-							alt="leftArrow"
-						></img>
-					</button>
-					<button className="arrow_area-button">
-						<img
-							className="arrow-img"
-							src={rightArrow}
-							alt="rightArrow"
-						></img>
-					</button>
-				</div> */}
 			</div>
 			<div className="features-content">
 				<h2 className="features-title">

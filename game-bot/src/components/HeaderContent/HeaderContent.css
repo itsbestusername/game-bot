@@ -1,6 +1,6 @@
 .header_content {
     width: 100%;
-    min-height: 1080px;
+    height: 94vh;
     display: flex;
     position: relative;
     z-index: 1;
@@ -8,7 +8,7 @@
 }
 
 .layout {
-    background: url("../../images/header-bottom-pic.png"); 
+    background: url("../../images/background/header-bottom-pic.png"); 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
@@ -20,17 +20,24 @@
 }
 
 .back-circles {
-    background: url(../../images/header-circles.png);
+    background: url(../../images/background/header-circles.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: 86vw;
-    height: 21vh;
+    height: 63vh;
     position: absolute;
     top: 1%;
     left: 7%;
     z-index: -1;
 } 
+
+.header-text-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 .header-text-area {
     color: white;
@@ -38,8 +45,9 @@
     flex-direction: column;
     gap: 25px;
     align-items: start;
-    margin-left: 21%;
-    margin-top: 235px;
+    margin-left: 20%;
+    margin-top: -6%;
+    width: 36%;
 }
 
 .header-title {
@@ -55,13 +63,13 @@
 
 .header-title::before {
     content: '';
-    background-image: url(../../images/arrows.png);
+    background-image: url(../../images/decor/arrows.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 40vw;
-    height: 40vh;
+    height: 55vh;
     position: absolute;
-    top: -47%;
+    top: -42%;
     left: -10%;
     z-index: -1;
     pointer-events: none; /* Это предотвратит блокирование кликов */
@@ -82,8 +90,7 @@
 .img-area {
     max-width: 790px;
     max-height: 790px;
-    margin-top: 170px;
-    margin-left: 1%;
+    margin-top: 5%;
 }
 
 .hero-img {
@@ -101,7 +108,7 @@
     }
 
     .back-circles {
-        background: url(../../images/back-circles-mob.png);
+        background: url(../../images/background/back-circles-mob.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -128,7 +135,7 @@
 
     .header-title::before {
         content: '';
-        background-image: url(../../images/arrow-header-mob.png);
+        background-image: url(../../images/decor/arrow-header-mob.png);
         width: 23vw;
         height: 21vh;
         top: -74%;
@@ -147,7 +154,7 @@
 
     .arrow-text::after {
         content: '';
-        background-image: url(../../images/text-header-mob.png);
+        background-image: url(../../images/decor/text-header-mob.png);
         background-size: contain;
         background-repeat: no-repeat;
         width: 22vw;
@@ -167,7 +174,6 @@
         width: 100%;
         max-height: 400px;
         margin-top: 29px;
-        margin-left: 0;
     }
 
     .hero-img {
@@ -222,20 +228,20 @@
     }
 
     .back-circles {
-    top: -13%;
+    top: 4%;
     left: 9%;
     }
 
-    .img-area {
-        margin-left: 2%;
+    .header-title::before {
+        height: 58vh;
     }
-
 }
 
 @media ((min-width: 2300px)) {
 
     .header-text-area {
         margin-left: 27%;
+        width: 33%;
     }
 
     .layout {
@@ -243,23 +249,21 @@
     }
 
     .back-circles {
-        top: -11%;
-        left: 9%;
+        top: 5%;
+        left: 10%;
         }
 
     .header-title::before {
-        height: 21vh;
+        height: 62vh;
+        top: -55%;
     }
     
 }
 
 @media ((min-width: 2600px)) {
-    .header_content {
-        height: 36vh;
-    }
-
     .header-text-area {
-        margin-left: 32%;
+        margin-left: 30%;
+        width: 30%;
     }
 
     .layout {
@@ -267,7 +271,8 @@
     }
 
     .back-circles {
-        top: 8%;
+        height: 72%;
+        top: 5%;
         left: 10%;
     }
         
@@ -275,16 +280,16 @@
         margin-left: 0;
     }
     .header-title::before {
-        height: 23vh;
+        height: 67vh;
     }
 }
 
 @media ((min-width: 3100px)) {
     .back-circles {
         width: 80vw;
-        height: 30vh;
+        height: 95vh;
         left: 14%;
-        top: -1%;
+        top: -4%;
     }
 
     .header-title {
@@ -292,8 +297,32 @@
     }
         
     .header-title::before {
-        height: 25vh;
-        top: -80%;
+        height: 73vh;
+        top: -68%;
+        left: -7%;
+    }
+}
+
+@media ((min-width: 4000px)) {
+    .back-circles {
+        width: 77vw;
+        height: 90vh;
+        left: 13%;
+        top: 2%;
+    }
+
+    .header-text-area {
+        margin-left: 32%;
+        width: 27%;
+    }
+
+    .header-title {
+        font-size: 64px;
+    }
+        
+    .header-title::before {
+        height: 73vh;
+        top: -68%;
         left: -7%;
     }
 }

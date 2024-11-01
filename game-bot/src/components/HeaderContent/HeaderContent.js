@@ -8,21 +8,23 @@ export const HeaderContent = ({ language }) => {
 		<div className="header_content">
 			<div className="layout"></div>
 			<div className="back-circles"></div>
-			<div className="header-text-area">
-				<h1 className="header-title">
-					{headerText[language].title1}
-					<br />
-					{headerText[language].title2}
-				</h1>
-				<div className="title-line"></div>
-				<p className="header-text">{headerText[language].text1}</p>
-				<p className="header-text arrow-text">
-					{headerText[language].text2}
-				</p>
-				<ButtonsArea language={language} />
-			</div>
-			<div className="img-area">
-				<img className="hero-img" src={heroes} alt="heroes"></img>
+			<div className='header-text-block'>
+				<div className="header-text-area">
+					<h1 className="header-title">
+						{headerText[language].title1}
+						<br />
+						{headerText[language].title2}
+					</h1>
+					<div className="title-line"></div>
+					<p className="header-text">{headerText[language].text1}</p>
+					<p className="header-text arrow-text">
+						{headerText[language].text2}
+					</p>
+					<ButtonsArea language={language} />
+				</div>
+				<div className="img-area">
+					<img className="hero-img" src={heroes} alt="heroes"></img>
+				</div>
 			</div>
 		</div>
 	);

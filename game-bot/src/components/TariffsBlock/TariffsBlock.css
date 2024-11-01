@@ -1,5 +1,6 @@
 .tariffs_block {
-    min-height: 1080px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,27 +12,27 @@
 }
 
 .tariffs-layout {
-    background: url("../../images/tariffs-layout.png"); 
+    background: url("../../images/background/tariffs-layout.png"); 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -33%;
+    top: -29%;
     left: 0;
     z-index: -2;
 }
 
 .back-tariffs-circles {
-    background: url(../../images/header-circles.png);
+    background: url(../../images/background/header-circles.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 100vw;
-    height: 40vh;
+    width: 97vw;
+    height: 80vh;
     position: absolute;
-    top: 3%;
+    top: 15%;
     left: 0;
     z-index: -1;
 }
@@ -43,11 +44,12 @@
     text-transform: uppercase;
     position: relative;
     margin-left: -65%;
+    margin-top: 2%;
 }
 
 .tariffs-title::before {
     content: '';
-    background-image: url(../../images/tariffs-down-arrow.png);
+    background-image: url(../../images/decor/tariffs-down-arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 300%;
@@ -59,7 +61,7 @@
 
 .tariffs-title::after {
     content: '';
-    background-image: url(../../images/tariffs-arrow.png);
+    background-image: url(../../images/decor/tariffs-arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 200%;
@@ -70,7 +72,7 @@
 }
 
 .tariffs-text-area {
-    margin-top: 7%;
+    margin-top: 8%;
     height: 100%;
     display: flex;
     gap: 35px;
