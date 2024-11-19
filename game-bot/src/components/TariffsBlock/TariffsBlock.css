@@ -29,21 +29,21 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 97vw;
-    height: 80vh;
+    width: 100vw;
+    height: 72vh;
     position: absolute;
-    top: 15%;
-    left: 0;
+    top: 24%;
+    left: 3%;
     z-index: -1;
 }
 
 .tariffs-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(3rem, 1.9375rem + 0.8854vw, 4.0625rem);
+    font-size: clamp(1.75rem, 1.4466rem + 1.2945vw, 3rem);
     font-weight: 800;
     text-transform: uppercase;
     position: relative;
-    margin-left: -65%;
+    margin-left: -61%;
     margin-top: 2%;
 }
 
@@ -52,11 +52,11 @@
     background-image: url(../../images/decor/tariffs-down-arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 300%;
-    height: 300%;
+    width: 100%;
+    height: 226%;
     position: absolute;
-    left: -46%;
-    top: -13px;
+    left: -35%;
+    top: 0;
 }
 
 .tariffs-title::after {
@@ -64,15 +64,15 @@
     background-image: url(../../images/decor/tariffs-arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 112%;
     position: absolute;
-    top: -100%;
-    left: 95%;
+    top: -60%;
+    left: 97%;
 }
 
 .tariffs-text-area {
-    margin-top: 8%;
+    margin-top: 5%;
     height: 100%;
     display: flex;
     gap: 35px;

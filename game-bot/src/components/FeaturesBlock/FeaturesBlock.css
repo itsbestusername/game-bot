@@ -16,10 +16,10 @@
     background-size: contain;
     background-position: right bottom;
     width: 81vw;
-    height: 81vh;
+    height: 93vh;
     position: absolute;
     right: 0;
-    bottom: -306px;
+    bottom: -548px;
     z-index: 2;
 }
 
@@ -30,7 +30,7 @@
     width: 93vw;
     height: 95vh;
     position: absolute;
-    top: 17px;
+    top: 7px;
     left: 0%;
 }
 
@@ -75,7 +75,7 @@
 
 .features-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(3rem, 1.9375rem + 0.8854vw, 4.0625rem);
+    font-size: clamp(1.75rem, 1.4466rem + 1.2945vw, 3rem);
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -86,10 +86,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 4%;
-    height: 5%;
+    height: 8%;
     position: absolute;
-    top: 14%;
-    left: 44%;
+    top: 17%;
+    left: 42%;
 }
 
 .features-list {
@@ -153,7 +153,7 @@
         gap: 17px;
     }
 
-    
+
 }
 
 @media (min-width:1440px) and (max-width:1800px) {
