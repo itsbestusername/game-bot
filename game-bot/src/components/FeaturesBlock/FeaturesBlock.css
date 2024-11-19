@@ -11,15 +11,15 @@
 }
 
 .girl-background {
-    background-image: url(../../images/background/character\ pic.png);
+    background-image: url(../../images/background/back-girl.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
-    width: 94vw;
-    height: 94vh;
+    width: 81vw;
+    height: 81vh;
     position: absolute;
     right: 0;
-    bottom: -344px;
+    bottom: -306px;
     z-index: 2;
 }
 
@@ -127,7 +127,36 @@
     background-repeat: no-repeat;
 }
 
-@media (min-width:1440px) and (max-width:1699px) {
+@media (max-width:1440px) {
+    .features-background {
+        display: none;
+    }
+
+    .girl-background {
+        display: none;
+    }
+
+    .features-title {
+        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+    }
+
+    .features-content {
+        gap: 40px;
+    }
+
+    .features-title::before {
+        top: 20%;
+        left: 42%;
+    }
+
+    .features-list {
+        gap: 17px;
+    }
+
+    
+}
+
+@media (min-width:1440px) and (max-width:1800px) {
     .girl-background {
         display: none;
     }

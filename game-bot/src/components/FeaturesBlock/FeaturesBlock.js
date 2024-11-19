@@ -1,5 +1,5 @@
 import './FeaturesBlock.css';
-import { useState, useEffect, useCallback  } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { ButtonsArea } from '../ButtonsArea/ButtonsArea';
 import { featuresText } from './featuresText';
 

@@ -78,6 +78,32 @@
     gap: 35px;
 }
 
+@media (max-width:1440px) {
+    .tariffs_block {
+        padding: 140px 40px 0;
+    }
+
+    .back-tariffs-circles {
+        display: none;
+    }
+
+    .tariffs-title {
+        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+    }
+
+    .tariffs-title::before {
+        height: 250%;
+    }
+
+    .tariffs-title::after {
+        height: 150%;
+    }
+
+    .tariffs-text-area {
+        margin-top: 5%;
+    }
+}
+
 @media (min-width:1440px) and (max-width:1699px) {
     .tariffs-title {
         font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);

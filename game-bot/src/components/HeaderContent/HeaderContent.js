@@ -8,7 +8,7 @@ export const HeaderContent = ({ language }) => {
 		<div className="header_content">
 			<div className="layout"></div>
 			<div className="back-circles"></div>
-			<div className='header-text-block'>
+			<div className="header-text-block">
 				<div className="header-text-area">
 					<h1 className="header-title">
 						{headerText[language].title1}

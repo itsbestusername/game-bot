@@ -57,3 +57,10 @@
         padding: 15px 23px;
         }
 }
+
+
+@media (max-width: 1440px) {
+    .buttons_area {
+        margin-top: 5px;
+    }
+}
