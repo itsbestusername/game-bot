@@ -16,10 +16,10 @@
     background-size: contain;
     background-position: right bottom;
     width: 81vw;
-    height: 93vh;
+    height: 79vh;
     position: absolute;
     right: 0;
-    bottom: -548px;
+    bottom: -380px;
     z-index: 2;
 }
 
@@ -88,7 +88,7 @@
     width: 4%;
     height: 8%;
     position: absolute;
-    top: 17%;
+    top: 14%;
     left: 42%;
 }
 
@@ -190,6 +190,15 @@
         width: 80vw;
         left: 6%;
     }
+
+    .features-title::before {
+        top: 12%;
+        left: 46%;
+    }
+
+    .features-img {
+        width: 18vw;
+    }
 }
 
 @media (min-width: 2500px) {
@@ -197,8 +206,17 @@
         display: none;
     }
 
+    .girl-background {
+        height: 87vh;
+        bottom: -474px;
+    }
+
     .features-title::before {
-        left: 46%;
+        left: 49%;
+    }
+
+    .features-img {
+        width: 16vw;
     }
 }
 
@@ -206,5 +224,9 @@
     .features-title::before {
         top: 15%;
         left: 46%;
+    }
+
+    .features-img {
+        width: 13vw;
     }
 }

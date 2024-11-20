@@ -132,25 +132,25 @@
 
 @media ((min-width: 2800px)) {
     .tariffs-layout {
-        top: -39%;
+        top: -44%;
     }
 
     .back-tariffs-circles {
-        width: 97vw;
-        top: 5%;
+        height: 97vh;
+        top: 6%;
         left: 1%;
     }
 }
 
-@media ((min-width: 3150px)) {
+@media ((min-width: 3100px)) {
     .tariffs-layout {
-        top: -44%;
+        top: -50%;
     }
     
     .back-tariffs-circles {
-        width: 100vw;
-        top: 7%;
-        left: 0%;
+        height: 102vh;
+        top: 10%;
+        left: 2%;
     }
 }
 
