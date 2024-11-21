@@ -62,10 +62,11 @@ html {
     position: relative;
 }
 
-@media (max-width:376px) {
+@media (max-width:375px) {
     .header-container {
-        padding: 20px;
-        gap: 10px;
+        padding: 10px;
+        gap: 55px;
+        background: #211F1F;
     }
 
     .header-logo {

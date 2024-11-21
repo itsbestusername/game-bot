@@ -73,12 +73,46 @@
 
 .tariffs-text-area {
     margin-top: 5%;
-    height: 100%;
+    height: auto;
     display: flex;
     gap: 35px;
 }
 
-@media (max-width:1440px) {
+@media (max-width:375px) {
+    .tariffs_block {
+        min-height: 667px;
+        padding: 100px 15px 20px;
+        height: auto;
+    }
+
+    .tariffs-layout {
+        width: 150%;
+        top: -90px;
+    }
+
+    .back-tariffs-circles {
+        display: none;
+    }
+
+    .tariffs-title {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .tariffs-text-area {
+        margin-top: 11%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tariff_area {
+        width: 345px;
+    }
+
+
+}
+
+@media (min-width:376px) and (max-width:1440px) {
     .tariffs_block {
         padding: 140px 40px 0;
     }

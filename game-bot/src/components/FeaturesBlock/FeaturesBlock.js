@@ -27,32 +27,78 @@ export const FeaturesBlock = ({ language }) => {
 
 	return (
 		<div className="features-block">
-			<div className="girl-background"></div>
-			<div className="features-background"></div>
-			<div className="features-img">
-				{/* Отображение текущего слайда */}
-				<img
-					className="feature-image-item"
-					src={currentFeature.image} // Отображение изображения текущего слайда
-					alt={`Slide ${currentSlide + 1}`}
-				/>
+			<div className="features-container">
+				<div className="girl-background"></div>
+				<div className="features-background"></div>
+				<div className="features-img">
+					{/* Отображение текущего слайда */}
+					<img
+						className="feature-image-item"
+						src={currentFeature.image} // Отображение изображения текущего слайда
+						alt={`Slide ${currentSlide + 1}`}
+					/>
+				</div>
+				<div className="features-content">
+					<h2 className="features-title">
+						{featuresText[language].title}
+					</h2>
+					<ul className="features-list">
+						{featuresText[language].features.map(
+							(feature, index) => (
+								<li
+									key={index}
+									className={`features-list-item ${
+										index === currentSlide ? 'active' : ''
+									}`}
+								>
+									{feature.text}
+								</li>
+							),
+						)}
+					</ul>
+					<ButtonsArea language={language} />
+				</div>
 			</div>
-			<div className="features-content">
+
+			<div className="mobile-container">
+				<div className="girl-background"></div>
+				<div className="features-background"></div>
 				<h2 className="features-title">
 					{featuresText[language].title}
 				</h2>
-				<ul className="features-list">
-					{featuresText[language].features.map((feature, index) => (
-						<li
-							key={index}
-							className={`features-list-item ${
-								index === currentSlide ? 'active' : ''
-							}`}
-						>
-							{feature.text}
-						</li>
-					))}
-				</ul>
+				{/* Отображение текущей функции на малых экранах */}
+				<div className="current-function">
+					<p className="features-list-item mobile-color">
+						{currentFeature.text}
+					</p>
+				</div>
+				<div className="features-img">
+					{/* Отображение текущего слайда */}
+					<img
+						className="feature-image-item"
+						src={currentFeature.image}
+						alt={`Slide ${currentSlide + 1}`}
+					/>
+					<div className="features-content">
+						{/* Полный список функций для больших экранов */}
+						<ul className="features-list">
+							{featuresText[language].features.map(
+								(feature, index) => (
+									<li
+										key={index}
+										className={`features-list-item ${
+											index === currentSlide
+												? 'active'
+												: ''
+										}`}
+									>
+										{feature.text}
+									</li>
+								),
+							)}
+						</ul>
+					</div>
+				</div>
 				<ButtonsArea language={language} />
 			</div>
 		</div>

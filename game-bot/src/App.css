@@ -37,3 +37,9 @@ a {
   background: linear-gradient(to right, #211F1F, #323144);
   margin: 0 auto;
 }
+
+@media (max-width:375px) {
+  .App {
+    background: #211F1F;
+  }
+}
