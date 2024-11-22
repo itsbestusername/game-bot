@@ -25,6 +25,7 @@
     right: 0;
     bottom: -380px;
     z-index: 2;
+    pointer-events: none;
 }
 
 .features-background {
