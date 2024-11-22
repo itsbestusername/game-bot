@@ -19,11 +19,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
-    width: 81vw;
-    height: 79vh;
+    width: 20vw;
+    height: 882px;
     position: absolute;
     right: 0;
-    bottom: -380px;
+    bottom: -400px;
     z-index: 2;
     pointer-events: none;
 }
@@ -83,6 +83,7 @@
     font-size: clamp(1.75rem, 1.4466rem + 1.2945vw, 3rem);
     font-weight: 800;
     text-transform: uppercase;
+    position: relative;
 }
 
 .features-title::before {
@@ -90,11 +91,11 @@
     background-image: url(../../images/decor/features-arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 4%;
-    height: 8%;
+    width: 100%;
+    height: 120%;
     position: absolute;
-    top: 14%;
-    left: 42%;
+    top: -45px;
+    left: -70px;
 }
 
 .current-function {
@@ -253,11 +254,6 @@
         gap: 40px;
     }
 
-    .features-title::before {
-        top: 20%;
-        left: 42%;
-    }
-
     .features-list {
         gap: 17px;
     }
@@ -284,11 +280,6 @@
         font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
     }
 
-    .features-title::before {
-        top: 16%;
-        left: 43%;
-    }
-
     .features-list {
         gap: 30px;
     }
@@ -298,11 +289,6 @@
     .features-background {
         width: 80vw;
         left: 6%;
-    }
-
-    .features-title::before {
-        top: 12%;
-        left: 46%;
     }
 
     .features-img {
@@ -320,21 +306,12 @@
         bottom: -474px;
     }
 
-    .features-title::before {
-        left: 49%;
-    }
-
     .features-img {
         width: 16vw;
     }
 }
 
 @media (min-width: 3150px) {
-    .features-title::before {
-        top: 15%;
-        left: 46%;
-    }
-
     .features-img {
         width: 13vw;
     }

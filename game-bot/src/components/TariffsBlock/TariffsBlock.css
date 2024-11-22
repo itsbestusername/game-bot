@@ -19,7 +19,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -29%;
+    top: -275px;
     left: 0;
     z-index: -2;
 }
@@ -55,7 +55,7 @@
     width: 100%;
     height: 226%;
     position: absolute;
-    left: -35%;
+    left: -80px;
     top: 0;
 }
 
@@ -67,14 +67,15 @@
     width: 100%;
     height: 112%;
     position: absolute;
-    top: -60%;
-    left: 97%;
+    top: -35px;
+    left: 230px;
 }
 
 .tariffs-text-area {
-    margin-top: 5%;
-    height: auto;
+    height: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 35px;
 }
 
@@ -97,6 +98,11 @@
     .tariffs-title {
         margin: 0;
         font-size: 24px;
+    }
+
+    .tariffs-title::after {
+        top: -30px;
+        left: 135px;
     }
 
     .tariffs-text-area {
@@ -129,7 +135,7 @@
     }
 
     .tariffs-title::after {
-        height: 150%;
+        left: 215px;
     }
 
     .tariffs-text-area {
@@ -140,6 +146,10 @@
 @media (min-width:1440px) and (max-width:1699px) {
     .tariffs-title {
         font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+    }
+
+    .tariffs-title::after {
+        left: 215px;
     }
 }
 
@@ -154,9 +164,6 @@
 }
 
 @media ((min-width: 2500px)) {
-    .tariffs-layout {
-        top: -35%;
-    }
 
     .tariffs-text-area {
         gap: 140px;
@@ -164,9 +171,6 @@
 }
 
 @media ((min-width: 2800px)) {
-    .tariffs-layout {
-        top: -44%;
-    }
 
     .back-tariffs-circles {
         height: 97vh;
@@ -176,19 +180,10 @@
 }
 
 @media ((min-width: 3100px)) {
-    .tariffs-layout {
-        top: -50%;
-    }
     
     .back-tariffs-circles {
         height: 102vh;
         top: 10%;
         left: 2%;
-    }
-}
-
-@media ((min-width: 3550px)) {
-    .tariffs-layout {
-        top: -50%;
     }
 }
