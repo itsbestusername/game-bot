@@ -100,7 +100,7 @@
     margin-left: -4%;
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
     .header_content {
         flex-direction: column;
         height: 770px;
@@ -110,7 +110,7 @@
         width: 190%;
         top: 140px;
         z-index: -2;
-        left: -160px;
+        left: -200px;
         z-index: 2;
     }
 
@@ -149,7 +149,7 @@
     .header-title::before {
         content: '';
         background-image: url(../../images/decor/arrow-header-mob.png);
-        width: 22vw;
+        width: 18vw;
         height: 21vh;
         top: -43%;
         left: 6%;
@@ -170,11 +170,11 @@
         background-image: url(../../images/decor/text-header-mob.png);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 22vw;
+        width: 20vw;
         height: 22vh;
         position: absolute;
         top: -58%;
-        left: 80%;
+        left: 83%;
         z-index: -1;
         pointer-events: none; /* Это предотвратит блокирование кликов */
     }
@@ -191,7 +191,7 @@
     }
 }
 
-@media (min-width: 376) and (max-width:1440px) {
+@media (min-width: 481) and (max-width:1440px) {
     .header_content {
         height: 100%;
     }

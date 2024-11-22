@@ -72,7 +72,7 @@
     margin-top: 24px;
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
     .tariff_area {
         width: 345px;
         min-height: 522px;
@@ -102,7 +102,7 @@
     }
 }
 
-@media (min-width:376px) and (max-width: 1440px) {
+@media (min-width:481px) and (max-width: 1440px) {
     .tariff_area {
         width: 350px;
         gap: 0px;

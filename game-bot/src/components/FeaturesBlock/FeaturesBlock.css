@@ -139,7 +139,7 @@
     display: none;
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
     .features-container {
         display: none;
     }
@@ -216,7 +216,7 @@
     }
 }
 
-@media (min-width:376px) and (max-width:1440px) {
+@media (min-width:481px) and (max-width:1440px) {
     .features-background {
         display: none;
     }

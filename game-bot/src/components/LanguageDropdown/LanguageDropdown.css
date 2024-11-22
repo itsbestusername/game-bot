@@ -61,7 +61,7 @@
     background-color: #211F1F;
 }
 
-@media (max-width:376px) {
+@media (max-width:480px) {
     .selected-language {
         gap: 5px;
         padding: 5px;

@@ -78,7 +78,7 @@
     gap: 35px;
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
     .tariffs_block {
         min-height: 667px;
         padding: 100px 15px 20px;
@@ -109,10 +109,9 @@
         width: 345px;
     }
 
-
 }
 
-@media (min-width:376px) and (max-width:1440px) {
+@media (min-width:481px) and (max-width:1440px) {
     .tariffs_block {
         padding: 140px 40px 0;
     }

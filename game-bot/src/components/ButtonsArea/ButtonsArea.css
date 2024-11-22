@@ -32,7 +32,7 @@
     padding: 22px 34px;
     }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
     .buttons_area {
         flex-direction: column;
         align-items: center;
@@ -60,7 +60,7 @@
 }
 
 
-@media (min-width:376px) and (max-width: 1440px) {
+@media (min-width:481px) and (max-width: 1440px) {
     .buttons_area {
         margin-top: 5px;
     }

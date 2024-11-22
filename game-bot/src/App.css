@@ -38,7 +38,7 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
   .App {
     background: #211F1F;
   }
