@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/game-bot/static/css/main.4bfc6799.css",
+    "main.css": "/game-bot/static/css/main.3be36289.css",
     "main.js": "/game-bot/static/js/main.3c1de65b.js",
     "static/js/453.1ef4e09f.chunk.js": "/game-bot/static/js/453.1ef4e09f.chunk.js",
     "static/media/header-heroes.png": "/game-bot/static/media/header-heroes.e477d11a64dc07b26990.png",
@@ -20,12 +20,12 @@
     "static/media/tariffs-layout.png": "/game-bot/static/media/tariffs-layout.94354f768c1a3a631b08.png",
     "index.html": "/game-bot/index.html",
     "static/media/rus.svg": "/game-bot/static/media/rus.b41328698709cf180d8d19cd65d03050.svg",
-    "main.4bfc6799.css.map": "/game-bot/static/css/main.4bfc6799.css.map",
+    "main.3be36289.css.map": "/game-bot/static/css/main.3be36289.css.map",
     "main.3c1de65b.js.map": "/game-bot/static/js/main.3c1de65b.js.map",
     "453.1ef4e09f.chunk.js.map": "/game-bot/static/js/453.1ef4e09f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bfc6799.css",
+    "static/css/main.3be36289.css",
     "static/js/main.3c1de65b.js"
   ]
 }
