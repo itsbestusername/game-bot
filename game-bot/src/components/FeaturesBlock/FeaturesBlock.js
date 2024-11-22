@@ -16,6 +16,12 @@ export const FeaturesBlock = ({ language }) => {
 		setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
 	}, [totalSlides]);
 
+	const prevSlide = useCallback(() => {
+		setCurrentSlide((prevSlide) =>
+			prevSlide === 0 ? totalSlides - 1 : prevSlide - 1,
+		);
+	}, [totalSlides]);
+
 	// Данные текущего слайда
 	const currentFeature = featuresText[language].features[currentSlide];
 
@@ -73,31 +79,22 @@ export const FeaturesBlock = ({ language }) => {
 					</p>
 				</div>
 				<div className="features-img">
+					{/* Левая стрелка */}
+					<button
+						className="arrow-button left-arrow"
+						onClick={prevSlide}
+					></button>
 					{/* Отображение текущего слайда */}
 					<img
 						className="feature-image-item"
 						src={currentFeature.image}
 						alt={`Slide ${currentSlide + 1}`}
 					/>
-					<div className="features-content">
-						{/* Полный список функций для больших экранов */}
-						<ul className="features-list">
-							{featuresText[language].features.map(
-								(feature, index) => (
-									<li
-										key={index}
-										className={`features-list-item ${
-											index === currentSlide
-												? 'active'
-												: ''
-										}`}
-									>
-										{feature.text}
-									</li>
-								),
-							)}
-						</ul>
-					</div>
+					{/* Правая стрелка */}
+					<button
+						className="arrow-button right-arrow"
+						onClick={nextSlide}
+					></button>
 				</div>
 				<ButtonsArea language={language} />
 			</div>
