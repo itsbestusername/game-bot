@@ -1,4 +1,5 @@
 import './TariffsBlock.css';
+// import { useState, useCallback } from 'react';
 import { TariffCard } from '../TariffCard/TariffCard';
 import {
 	tariffsText,

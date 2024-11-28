@@ -27,7 +27,7 @@ export const FeaturesBlock = ({ language }) => {
 
 	// Автоматическая смена слайдов (опционально)
 	useEffect(() => {
-		const interval = setInterval(nextSlide, 4000); // Смена каждые 3 секунд
+		const interval = setInterval(nextSlide, 4000); // Смена каждые 4 секунд
 		return () => clearInterval(interval); // Очистка интервала при размонтировании компонента
 	}, [nextSlide]);
 

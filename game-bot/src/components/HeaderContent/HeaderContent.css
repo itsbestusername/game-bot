@@ -28,7 +28,7 @@
     width: 86vw;
     height: 63vh;
     position: absolute;
-    top: 7%;
+    top: 8%;
     left: 7%;
     z-index: -1;
 } 
@@ -103,21 +103,126 @@
     margin-left: -4%;
 }
 
+@media (max-width:1919px) {
+    .back-circles {
+        display: none;
+    }
+
+    .header-title::before {
+        height: 575px;
+        top: -63%;
+        left: -7%;
+    }
+}
+
+@media (max-width:1699px) {
+    .header-text-area {
+        margin-left: 13%;
+    }
+
+    .layout {
+        display: none;
+    }
+
+    .back-circles {
+        display: none;
+    }
+    
+    .hero-img {
+        max-width: 50vw;
+        margin-top: 9%;
+        margin-left: 16%;
+    }
+}
+
+@media (max-width:1440px) {
+    .header-text-area {
+        margin-top: 0;
+        margin-left: 10%;
+    }
+
+    .layout {
+        display: none;
+    }
+
+    .back-circles {
+        display: none;
+    }
+
+    .header-title::before {
+        width: 46vw;
+        height: 65vh;
+        top: -58%;
+    }
+
+
+    .hero-img {
+        max-width: 50vw;
+        margin-top: 11%;
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header-title {
+        font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
+        width: 130%;
+        min-height: 80px;
+    }
+
+    .header-title::before {
+        width: 56vw;
+        left: -15%;
+        top: -35%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        display: none;
+    }
+
+    .back-circles {
+        display: none;
+    }
+
+    .header-title {
+        font-size: clamp(1.75rem, 1.6055rem + 0.6163vw, 2rem);
+    }
+
+    .header-title::before {
+        display: none;
+    }
+    
+    .header-text {
+        font-size: clamp(0.8125rem, 0.6319rem + 0.7704vw, 1.125rem);
+    }
+
+    .hero-img {
+        max-width: 60vw;
+        margin-top: 0%;
+        margin-left: 25%;
+    }
+}
+
 @media (max-width:480px) {
     .header_content {
         flex-direction: column;
         height: 770px;
+        position: relative;
     }
 
     .layout {
+        display: block;
         width: 190%;
-        top: 140px;
+        top: 120px;
         z-index: -2;
         left: -200px;
         z-index: 2;
     }
 
     .back-circles {
+        display: block;
         background: url(../../images/background/back-circles-mob.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -127,7 +232,7 @@
         position: absolute;
         top: 47%;
         left: 0%;
-        z-index: -1;
+        z-index:-1;
     } 
 
     .header-text-block {
@@ -152,10 +257,16 @@
     .header-title::before {
         content: '';
         background-image: url(../../images/decor/arrow-header-mob.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
         width: 18vw;
         height: 21vh;
-        top: -43%;
-        left: 6%;
+        top: -32%;
+        left: 8%;
+        z-index: -1;
+        pointer-events: none;
+        display: block;
     }
 
     .header-text {
@@ -173,11 +284,11 @@
         background-image: url(../../images/decor/text-header-mob.png);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 20vw;
+        width: 22vw;
         height: 22vh;
         position: absolute;
         top: -58%;
-        left: 83%;
+        left: 80%;
         z-index: -1;
         pointer-events: none; /* Это предотвратит блокирование кликов */
     }
@@ -191,78 +302,7 @@
         max-width: 163vw;
         max-height: 100vh;
         margin-left: -13px;
-    }
-}
-
-@media (min-width: 481) and (max-width:1440px) {
-    .header_content {
-        height: 100%;
-    }
-
-    .header-text-area {
-        margin-top: 0;
-        margin-left: 10%;
-    }
-
-    .layout {
-        display: none;
-    }
-
-    .back-circles {
-        display: none;
-    }
-
-    /* .header-title {
-        font-size: clamp(1.75rem, 1.4629rem + 1.2218vw, 2.5625rem);
-    } */
-
-    .header-title::before {
-        width: 46vw;
-        height: 65vh;
-        top: -58%;
-    }
-
-
-    .hero-img {
-        max-width: 50vw;
-        margin-top: 11%;
-        margin-left: 18%;
-    }
-}
-
-@media (min-width:1440px) and (max-width:1699px) {
-    .header_content {
-        height: 100%;
-    }
-
-    .header-text-area {
-        margin-left: 13%;
-    }
-
-    .layout {
-        display: none;
-    }
-
-    .back-circles {
-        display: none;
-    }
-    
-    .hero-img {
-        max-width: 50vw;
-        margin-top: 9%;
-        margin-left: 16%;
-    }
-}
-
-@media (min-width:1700px) and (max-width:1919px) {
-    .back-circles {
-        display: none;
-    }
-
-    .header-title::before {
-        height: 575px;
-        top: -63%;
-        left: -7%;
+        margin-top: 8%;
     }
 }
 

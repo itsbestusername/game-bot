@@ -1,13 +1,14 @@
 .tariffs_block {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 0;
     overflow: hidden;
-    padding: 160px 260px 0;
+    padding: 9% 12% 0;
     color: white;
 }
 
@@ -72,54 +73,41 @@
 }
 
 .tariffs-text-area {
-    height: 40%;
+    height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
+    margin-top: 5%;
 }
 
-@media (max-width:480px) {
-    .tariffs_block {
-        min-height: 667px;
-        padding: 100px 15px 20px;
-        height: auto;
-    }
 
-    .tariffs-layout {
-        width: 150%;
-        top: -90px;
-    }
-
+@media (max-width:1699px) {
     .back-tariffs-circles {
         display: none;
     }
-
+    
     .tariffs-title {
-        margin: 0;
-        font-size: 24px;
+        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
     }
 
     .tariffs-title::after {
-        top: -30px;
-        left: 135px;
+        left: 215px;
     }
 
-    .tariffs-text-area {
-        margin-top: 11%;
-        flex-direction: column;
-        gap: 20px;
+    .tariffs-layout {
+        top: -25%;
     }
-
-    .tariff_area {
-        width: 345px;
-    }
-
 }
 
-@media (min-width:481px) and (max-width:1440px) {
+@media (max-width:1440px) {
     .tariffs_block {
-        padding: 140px 40px 0;
+        padding: 9% 5% 0;
+    }
+
+    .tariffs-layout {
+        display: none;
     }
 
     .back-tariffs-circles {
@@ -137,19 +125,70 @@
     .tariffs-title::after {
         left: 215px;
     }
+}
 
-    .tariffs-text-area {
-        margin-top: 5%;
+
+@media (max-width:1280px) {
+    .tariffs_block {
+        padding: 9% 2% 0;
+    }
+
+    .tariffs-title {
+        font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
     }
 }
 
-@media (min-width:1440px) and (max-width:1699px) {
+@media (max-width:1024px) {
+    .tariffs-text-area {
+        flex-wrap: wrap;
+    }
+    
+    .tariffs_block {
+        padding: 9% 2% 0;
+    }
+
     .tariffs-title {
-        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+        font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
+    }
+}
+
+@media (max-width:768px) {
+    .tariffs_block {
+        padding: 9% 2% 0;
+    }
+
+    .tariffs-title {
+        font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
+    }
+}
+
+
+@media (max-width:480px) {
+    .tariffs_block {
+        min-height: 667px;
+        padding: 100px 15px 20px;
+        height: auto;
+    }
+
+    .tariffs-layout {
+        width: 150%;
+        top: -90px;
+    }
+
+    .tariffs-title {
+        margin: 0;
+        font-size: 24px;
     }
 
     .tariffs-title::after {
-        left: 215px;
+        top: -30px;
+        left: 135px;
+    }
+
+    .tariffs-text-area {
+        margin-top: 11%;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 

@@ -32,11 +32,11 @@
     border-radius: 22px;
     color: black;
     font-size: 18px;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    left: 0;
-    top: 50%;
-    padding: 26px 36px;
+    top: -120px;
+    padding-top: 6%;
+    padding-left: 3%;
 }
 
 .card-list {
@@ -72,37 +72,8 @@
     margin-top: 24px;
 }
 
-@media (max-width:480px) {
-    .tariff_area {
-        width: 345px;
-        min-height: 522px;
-    }
 
-    .card_back-block {
-        padding-top: 15px;
-    }
-
-    .card_area {
-        padding: 23px 20px;
-        font-size: 13px;
-        top: 10%;
-        height: auto;
-    }
-
-    .card-title {
-        font-size: 20px;
-    }
-    
-    .icon-available {
-        font-size: 22px;
-    }
-
-    .card-price {
-        font-size: 22px;
-    }
-}
-
-@media (min-width:481px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
     .tariff_area {
         width: 350px;
         gap: 0px;
@@ -110,12 +81,13 @@
 
     .card_back-block {
         height: 100px;
-        padding-top: 12px;
+        padding-top: 2%;
     }
 
     .card_area {
         height: 423px;
         padding: 18px 36px;
+        top: -35px;
     }
 
     .card-list {
@@ -134,5 +106,56 @@
     .tariff-button {
         width: 276px;
         height: 65px;
+    }
+}
+
+
+@media (max-width:1280px) {
+    .card-title {
+        font-size: 28px;
+    }
+
+    .tariff_area {
+        min-width: 300px;
+        max-width: 350px;
+    }
+
+    .card_area {
+        height: auto;
+    }
+
+    .card-item {
+        font-size: clamp(1rem, 0rem + 1.5625vw, 1.25rem);
+    }
+}
+
+
+@media (max-width:480px) {
+    .tariff_area {
+        width: 345px;
+        min-height: 400px;
+    }
+
+    .card_back-block {
+        padding-top: 15px;
+    }
+
+    .card_area {
+        padding: 23px 20px;
+        font-size: 13px;
+        top: 13%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .icon-available {
+        font-size: 22px;
+    }
+
+    .card-price {
+        font-size: 22px;
     }
 }
