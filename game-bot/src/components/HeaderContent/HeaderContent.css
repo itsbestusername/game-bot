@@ -17,6 +17,7 @@
     position: absolute;
     top: 335px;
     z-index: -2;
+    pointer-events: none;
 }
 
 .back-circles {
