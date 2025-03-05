@@ -129,6 +129,13 @@
     }
 }
 
+@media (max-width:1025px) {
+    .tariff_area {
+        min-width: 250px;
+        max-width: 300px;
+    }
+}
+
 
 @media (max-width:480px) {
     .tariff_area {
@@ -143,7 +150,7 @@
     .card_area {
         padding: 23px 20px;
         font-size: 13px;
-        top: 13%;
+        top: -10%;
         height: auto;
     }
 

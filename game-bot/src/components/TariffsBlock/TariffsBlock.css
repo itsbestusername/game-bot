@@ -163,7 +163,7 @@
 }
 
 
-@media (max-width:480px) {
+@media (max-width:700px) {
     .tariffs_block {
         min-height: 667px;
         padding: 100px 15px 20px;

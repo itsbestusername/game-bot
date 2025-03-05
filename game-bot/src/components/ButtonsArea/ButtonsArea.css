@@ -53,12 +53,23 @@
     }
 }
 
+@media (max-width:800px) {
+    .button {
+        font-size: 13px;
+        min-width: 175px;
+        height: 48px;
+    }
+
+    .buttons_area {
+        margin-top: 30px;
+    }
+}
+
 @media (max-width:480px) {
     .buttons_area {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        margin-top: 30px;
     }
 
     .button-video {
