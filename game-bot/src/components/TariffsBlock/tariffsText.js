@@ -10,30 +10,24 @@ export const tariffsText = {
 export const tariffDataMini = {
 	ru: {
 		background: 'linear-gradient(45deg, #9296D5, #4C4E6F)',
-		tariffName: 'mini',
+		tariffName: '1 день',
 		functions: [
 			{ name: 'Весь функционал бота', available: true },
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
-			{ name: 'Запуск по расписанию', available: false },
-			{ name: 'Расширенный отчет о работе', available: false },
-			{ name: 'Улучшенная оптимизация', available: false },
 		],
-		price: '3000 руб',
+		price: 'Бесплатно',
 		button: 'Подробнее',
 	},
 	en: {
 		background: 'linear-gradient(45deg,  #9296D5, #4C4E6F)',
-		tariffName: 'mini',
+		tariffName: '1 day',
 		functions: [
 			{ name: 'All bot functionality', available: true },
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
-			{ name: 'Scheduled launch', available: false },
-			{ name: 'Extended work report', available: false },
-			{ name: 'Improved optimization', available: false },
 		],
-		price: '30 USD',
+		price: 'try free',
 		button: 'more details',
 	},
 };
@@ -41,30 +35,24 @@ export const tariffDataMini = {
 export const tariffDataStandart = {
 	ru: {
 		background: 'linear-gradient(45deg, #BA7DCB, #4C4E6F)',
-		tariffName: 'standart',
+		tariffName: '7 дней',
 		functions: [
 			{ name: 'Весь функционал бота', available: true },
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
-			{ name: 'Запуск по расписанию', available: true },
-			{ name: 'Расширенный отчет о работе', available: false },
-			{ name: 'Улучшенная оптимизация', available: false },
 		],
-		price: '5000 руб',
+		price: 'от 1500 руб',
 		button: 'Подробнее',
 	},
 	en: {
 		background: 'linear-gradient(45deg,   #BA7DCB, #4C4E6F)',
-		tariffName: 'standart',
+		tariffName: '7 days',
 		functions: [
 			{ name: 'All bot functionality', available: true },
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
-			{ name: 'Scheduled launch', available: true },
-			{ name: 'Extended work report', available: false },
-			{ name: 'Improved optimization', available: false },
 		],
-		price: '50 USD',
+		price: 'from 15$',
 		button: 'more details',
 	},
 };
@@ -72,30 +60,24 @@ export const tariffDataStandart = {
 export const tariffDataPremium = {
 	ru: {
 		background: 'linear-gradient(45deg, #82C380, #515B61)',
-		tariffName: 'premium',
+		tariffName: '30 дней',
 		functions: [
 			{ name: 'Весь функционал бота', available: true },
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
-			{ name: 'Запуск по расписанию', available: true },
-			{ name: 'Расширенный отчет о работе', available: true },
-			{ name: 'Улучшенная оптимизация', available: true },
 		],
-		price: '9000 руб',
+		price: 'от 5000 руб',
 		button: 'Подробнее',
 	},
 	en: {
 		background: 'linear-gradient(45deg,  #82C380, #515B61)',
-		tariffName: 'premium',
+		tariffName: '30 days',
 		functions: [
 			{ name: 'All bot functionality', available: true },
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
-			{ name: 'Scheduled launch', available: true },
-			{ name: 'Extended work report', available: true },
-			{ name: 'Improved optimization', available: true },
 		],
-		price: '90 USD',
+		price: 'from 50$',
 		button: 'more details',
 	},
 };
