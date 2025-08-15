@@ -4,12 +4,11 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 60px;
 }
 
 .card_back-block {
     width: 100%;
-    height: 140px;
+    height: 100px;
     border-radius: 22px;
     display: flex;
     justify-content: center;
@@ -27,14 +26,14 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 450px;
+    height: 380px;
     background-color: white;
     border-radius: 22px;
     color: black;
     font-size: 18px;
     position: relative;
     z-index: 2;
-    top: -120px;
+    top: -35px;
     padding-top: 6%;
 }
 
@@ -68,12 +67,6 @@
     font-weight: 600;
 }
 
-.card-price_about {
-    font-size: 10px;
-    width: 95%;
-    padding: 5px 0;
-}
-
 .tariff-button {
     margin-top: 24px;
 }
@@ -91,7 +84,6 @@
     }
 
     .card_area {
-        height: 423px;
         padding: 18px 36px;
         top: -35px;
     }
@@ -114,7 +106,6 @@
         height: 65px;
     }
 }
-
 
 @media (max-width:1280px) {
     .card-title {
@@ -142,7 +133,6 @@
     }
 }
 
-
 @media (max-width:480px) {
     .tariff_area {
         width: 345px;
@@ -151,6 +141,7 @@
 
     .card_back-block {
         padding-top: 15px;
+        height: 85px;
     }
 
     .card_area {
@@ -162,7 +153,7 @@
     .card-title {
         font-size: 20px;
     }
-    
+
     .icon-available {
         font-size: 22px;
     }
@@ -171,7 +162,31 @@
         font-size: 22px;
     }
 
-    .card-price_about{
+    .card-price_about {
         width: 100%;
+    }
+}
+
+@media (min-width:2100px) {
+
+    .tariff_area {
+        width: 450px;
+    }
+
+    .card_area {
+        top: -25px;
+        height: 450px;
+    }
+
+    .card-title {
+        font-size: 35px;
+    }
+
+    .card-item {
+        font-size: 24px;
+    }
+
+    .card-price {
+        font-size: 40px;
     }
 }

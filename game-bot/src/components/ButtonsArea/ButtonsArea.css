@@ -34,7 +34,7 @@
 
 @media (max-width: 1440px) {
     .buttons_area {
-        margin-top: 5px;
+        margin-top: 5%;
     }
 
     .button {
@@ -82,4 +82,8 @@
         border: none;
         padding: 15px 23px;
         }
+
+    .buttons_area {
+        margin-top: 12px;
+    }
 }

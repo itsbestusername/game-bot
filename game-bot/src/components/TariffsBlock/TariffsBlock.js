@@ -1,5 +1,4 @@
 import './TariffsBlock.css';
-// import { useState, useCallback } from 'react';
 import { TariffCard } from '../TariffCard/TariffCard';
 import {
 	tariffsText,
@@ -11,7 +10,7 @@ import {
 export const TariffsBlock = ({ language }) => {
 	return (
 		<div className="tariffs_block">
-			<div className="tariffs-layout"></div>
+			<div className="girl-background"></div>
 			<div className="back-tariffs-circles"></div>
 			<h1 className="tariffs-title">{tariffsText[language].title}</h1>
 			<div className="tariffs-text-area">
@@ -27,6 +26,9 @@ export const TariffsBlock = ({ language }) => {
 					language={language}
 					tariffData={tariffDataPremium[language]}
 				/>
+			</div>
+			<div className="tariffs-price_area">
+				<p className="tariffs-price_about">{tariffsText[language].aboutPrice}</p>
 			</div>
 		</div>
 	);

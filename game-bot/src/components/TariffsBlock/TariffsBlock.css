@@ -12,29 +12,30 @@
     color: white;
 }
 
-.tariffs-layout {
-    background: url("../../images/background/tariffs-layout.png"); 
+.girl-background {
+    background-image: url(../../images/background/back-girl.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top;
-    width: 100%;
-    height: 100%;
+    background-position: right bottom;
+    width: 20vw;
+    height: 70vh;
     position: absolute;
-    top: -275px;
-    left: 0;
-    z-index: -2;
+    right: 0;
+    bottom: -5%;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .back-tariffs-circles {
-    background: url(../../images/background/header-circles.png);
+    background: url(../../images/background/back-tafiffs-circles.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: 100vw;
-    height: 72vh;
+    height: 25vh;
     position: absolute;
-    top: 24%;
-    left: 3%;
+    top: 6%;
+    left: -47%;
     z-index: -1;
 }
 
@@ -44,7 +45,7 @@
     font-weight: 800;
     text-transform: uppercase;
     position: relative;
-    margin-left: -61%;
+    margin-left: -44%;
     margin-top: 2%;
 }
 
@@ -73,21 +74,44 @@
 }
 
 .tariffs-text-area {
-    height: auto;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 35px;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
+.tariffs-price_area {
+    width: 54%;
+    position: relative;
+    left: -8%;
+    top: 3%;
+}
+
+.tariffs-price_about {
+    font-size: 18px;
+}
+
+@media (max-width:1750px) {
+    .girl-background {
+        display: none;
+    }
+
+    .tariffs-text-area {
+        justify-content: center;
+    }
+
+    .tariffs-price_area {
+        left: 0;
+        top: 0;
+    }
+}
 
 @media (max-width:1699px) {
     .back-tariffs-circles {
         display: none;
     }
-    
+
     .tariffs-title {
         font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
     }
@@ -96,9 +120,7 @@
         left: 215px;
     }
 
-    .tariffs-layout {
-        top: -25%;
-    }
+
 }
 
 @media (max-width:1440px) {
@@ -106,9 +128,7 @@
         padding: 9% 5% 0;
     }
 
-    .tariffs-layout {
-        display: none;
-    }
+
 
     .back-tariffs-circles {
         display: none;
@@ -116,6 +136,7 @@
 
     .tariffs-title {
         font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
+        margin-left: 0;
     }
 
     .tariffs-title::before {
@@ -127,7 +148,6 @@
     }
 }
 
-
 @media (max-width:1280px) {
     .tariffs_block {
         padding: 9% 2% 0;
@@ -136,19 +156,22 @@
     .tariffs-title {
         font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
     }
+
+    .tariffs-price_about {
+        font-size: clamp(1rem, 0rem + 1.5625vw, 1.25rem);
+    }
 }
 
 @media (max-width:1024px) {
-    .tariffs-text-area {
-        flex-wrap: wrap;
-    }
-    
-    .tariffs_block {
-        padding: 9% 2% 0;
-    }
-
     .tariffs-title {
         font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
+    }
+}
+
+@media (max-width:980px) {
+    .tariffs-text-area {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -162,7 +185,6 @@
     }
 }
 
-
 @media (max-width:700px) {
     .tariffs_block {
         min-height: 667px;
@@ -170,10 +192,7 @@
         height: auto;
     }
 
-    .tariffs-layout {
-        width: 150%;
-        top: -90px;
-    }
+
 
     .tariffs-title {
         margin: 0;
@@ -188,41 +207,55 @@
     .tariffs-text-area {
         margin-top: 11%;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
+    }
+
+    .tariffs-price_area {
+        width: 100%;
+        left: 0;
+    }
+
+    .tariffs-price_about {
+        font-size: 13px;
     }
 }
 
-@media ((min-width: 2100px)) {
+@media (min-width: 2100px) {
     .tariffs-layout {
         top: -30%;
     }
-    
+
     .tariffs-text-area {
         gap: 100px;
+        margin-top: 10%;
+    }
+
+    .tariffs-price_area {
+        left: -12%;
+    }
+
+    .tariffs-title {
+        font-size: 64px;
+    }
+
+    .tariffs-price_about {
+        font-size: 24px;
     }
 }
 
-@media ((min-width: 2500px)) {
+@media (min-width: 2500px) {
+    .tariffs-title {
+        margin-left: 0;
+    }
 
     .tariffs-text-area {
+        justify-content: center;
         gap: 140px;
     }
-}
 
-@media ((min-width: 2800px)) {
-
-    .back-tariffs-circles {
-        height: 97vh;
-        top: 6%;
-        left: 1%;
-    }
-}
-
-@media ((min-width: 3100px)) {
-    
-    .back-tariffs-circles {
-        height: 102vh;
-        top: 10%;
-        left: 2%;
+    .tariffs-price_area {
+        left: 0;
+        top: 5%;
     }
 }

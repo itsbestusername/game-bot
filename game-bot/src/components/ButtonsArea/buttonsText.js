@@ -1,10 +1,10 @@
 export const buttonsText = {
 	ru: {
 		buy: 'Попробовать бесплатно',
-		watchButton: 'Посмотреть демонстрацию',
+		watchButton: 'Скачать инструкцию',
 	},
 	en: {
 		buy: 'Try free',
-		watchButton: 'Watch the demonstration',
+		watchButton: 'Download instructions',
 	},
 };

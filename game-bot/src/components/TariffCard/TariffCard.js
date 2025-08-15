@@ -1,6 +1,4 @@
 import './TariffCard.css';
-import { aboutPrice } from './aboutPrice';
-
 export const TariffCard = ({ tariffData, language }) => {
 	return (
 		<div className="tariff_area">
@@ -26,9 +24,8 @@ export const TariffCard = ({ tariffData, language }) => {
 					))}
 				</ul>
 				<p className="card-price">{tariffData.price}</p>
-				<p className="card-price_about">{aboutPrice[language].text}</p>
 				<a
-					href="https://t.me/ZeonGameBot"
+					href="https://t.me/zeon_game_bot"
 					className="button button-buy tariff-button"
 					target="_blank"
 					rel="noopener noreferrer"

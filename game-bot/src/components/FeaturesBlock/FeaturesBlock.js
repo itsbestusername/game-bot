@@ -33,9 +33,8 @@ export const FeaturesBlock = ({ language }) => {
 
 	return (
 		<div className="features-block">
+			<div className="features-background"></div>
 			<div className="features-container">
-				<div className="girl-background"></div>
-				<div className="features-background"></div>
 				<div className="features-img">
 					{/* Отображение текущего слайда */}
 					<img

@@ -2,7 +2,7 @@
 export const menuText = {
 	ru: {
 		home: 'Главная',
-		features: 'Функционал',
+		features: 'Особенности',
 		tariffs: 'Тарифы',
 	},
 	en: {

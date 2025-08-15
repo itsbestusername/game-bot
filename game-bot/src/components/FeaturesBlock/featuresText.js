@@ -1,60 +1,57 @@
-import img1 from '../../images/features/1.jpg';
-import img2 from '../../images/features/2.jpg';
-import img3 from '../../images/features/3.jpg';
-import img4 from '../../images/features/4.jpg';
-import img5 from '../../images/features/5.jpg';
-import img6 from '../../images/features/6.jpg';
-import img7 from '../../images/features/7.jpg';
+import img1 from '../../images/features/облако.png';
+import img2 from '../../images/features/автоматизация.jpg';
+import img3 from '../../images/features/сбор-ресурсов.jpg';
+import img4 from '../../images/features/доступ.jpg';
+import img5 from '../../images/features/настройки.png';
+import img6 from '../../images/features/комьюнити.jpg';
 
 export const featuresText = {
 	ru: {
-		title: 'Функционал',
+		title: 'Особенности',
 		features: [
-			{ text: 'Автоматический сбор ресурсов на карте мира', image: img1 },
-			{ text: 'Походы на логово зомби', image: img2 },
+			{ text: 'Бот работает полностью в облаке. Не нужно ничего скачивать и устанавливать. Все работает через телеграм',
+				image: img1 
+			},
+			{ text: 'Автоматизация сбора наград, найма юнитов, фарма компании, похода на логова, сбор ресурсов в яме и многое другое', 
+				image: img2 
+			},
 			{
-				text: 'Повторные прохождения уровней для получения ресурсов',
+				text: 'Сбор ресурсов на карте мира. Бот умеет определять когда плитка доступна для сбора или уже кто-то выдвинулся на ее сбор. Также бот умеет решать конфликты и отзывать пересекающиеся марши.',
 				image: img3,
 			},
 			{
-				text: 'Полив и удобрение грядок союзников в теплице',
+				text: 'Доступ с любого устройства',
 				image: img4,
 			},
-			{ text: 'Сбор ресурсов в яме', image: img5 },
+			{ text: 'Разнообразие настроек позволит вам настроить поведения бота индивидуально', image: img5 },
 			{
-				text: 'Индивидуальная настройка работы бота с  любыми параметрами',
+				text: 'Мы активно развиваем проект, взаимодействуем с комьюнити и добавляем новые механики',
 				image: img6,
 			},
-			{
-				text: 'Найм бесплатных героев в таверне, прохождение викторин и многое другое',
-				image: img7,
-			},
 		],
-		watchButton: 'Посмотреть видео',
 	},
 	en: {
 		title: 'Features',
 		features: [
 			{
-				text: 'Automatic resource collection on the world map',
+				text: 'Fully cloud-based. Nothing to download or configure. Everything works through Telegram',
 				image: img1,
 			},
-			{ text: 'Hiking to the Zombie Lair', image: img2 },
-			{ text: 'Replay levels to get resources', image: img3 },
+			{ text: 'Collecting rewards, recruiting units, campaign farming, lair runs, resource gathering in the pit, and more', 
+				image: img2 
+			},
+			{ text: 'World-map resource gathering: detects when a tile is free or already being taken. It also resolves conflicts and recalls overlapping marches', 
+				image: img3 
+			},
 			{
-				text: 'Watering and fertilizing the allied beds in the greenhouse',
+				text: 'Access from any device',
 				image: img4,
 			},
-			{ text: 'Collecting resources in the pit', image: img5 },
+			{ text: 'Flexible settings to tailor the bot’s behavior to your playstyle', image: img5 },
 			{
-				text: 'Individual configuration of the bot with any parameters',
+				text: 'We’re actively developing the project, engaging with the community, and adding new mechanics regularly',
 				image: img6,
 			},
-			{
-				text: 'Hire free heroes in the tavern, take quizzes and more',
-				image: img7,
-			},
 		],
-		watchButton: 'Watch video',
 	},
 };

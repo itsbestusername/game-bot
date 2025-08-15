@@ -5,7 +5,7 @@ export const ButtonsArea = ({ language }) => {
 	return (
 		<div className="buttons_area">
 			<a
-				href="https://t.me/ZeonGameBot"
+				href="https://t.me/zeon_game_bot"
 				className="button button-buy"
 				target="_blank"
 				rel="noopener noreferrer"
@@ -13,10 +13,9 @@ export const ButtonsArea = ({ language }) => {
 				{buttonsText[language].buy}
 			</a>
 			<a
-				href="https://vk.com/video807566_169118280"
+				href="/example.pdf"
 				className="button button-video"
-				target="_blank"
-				rel="noopener noreferrer"
+				download
 			>
 				{buttonsText[language].watchButton}
 			</a>
