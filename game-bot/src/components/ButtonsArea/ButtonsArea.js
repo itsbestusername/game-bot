@@ -1,5 +1,5 @@
 import './ButtonsArea.css';
-import { buttonsText } from './buttonsText';
+import { buttonsText,  } from './buttonsText';
 
 export const ButtonsArea = ({ language }) => {
 	return (
@@ -13,9 +13,10 @@ export const ButtonsArea = ({ language }) => {
 				{buttonsText[language].buy}
 			</a>
 			<a
-				href="/example.pdf"
+				href={buttonsText[language].docLink}
 				className="button button-video"
-				download
+				target="_blank"
+                rel="noopener noreferrer"
 			>
 				{buttonsText[language].watchButton}
 			</a>
