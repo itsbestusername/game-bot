@@ -31,6 +31,15 @@ export const HeaderMenu = ({ activeSection, language, onLanguageChange }) => {
 						{menuText[language].tariffs}
 					</a>
 				</li>
+				<li className="menu-list-item">
+					<a
+						href="https://www.zeonbot.ru/solver/index.html"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{menuText[language].solver}
+					</a>
+				</li>
 			</ul>
 			<LanguageDropdown
 				language={language}

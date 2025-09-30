@@ -28,8 +28,10 @@
 }
 
 .arrow {
-    font-size: clamp(1.0625rem, 0.6904rem + 0.3101vw, 1.5625rem); /* размер стрелки */
-    line-height: 1; /* Чтобы стрелки не искажались по вертикали */
+    font-size: clamp(1.0625rem, 0.6904rem + 0.3101vw, 1.5625rem);
+    /* размер стрелки */
+    line-height: 1;
+    /* Чтобы стрелки не искажались по вертикали */
 }
 
 .dropdown-menu {
@@ -61,6 +63,37 @@
     background-color: #211F1F;
 }
 
+@media (max-width:1700px) {
+    .selected-language {
+        gap: 5px;
+        min-width: 86px;
+        min-height: 46px;
+    }
+
+    .flag-icon {
+        width: 30px;
+        height: 24px;
+    }
+
+    .language-name {
+        font-size: 12px;
+    }
+
+    .arrow {
+        font-size: 12px;
+        /* размер стрелки */
+    }
+
+    .dropdown-menu {
+        width: 66px;
+    }
+
+    .dropdown-item {
+        gap: 5px;
+        font-size: 12px;
+    }
+}
+
 @media (max-width:1024px) {
     .selected-language {
         gap: 5px;
@@ -78,7 +111,8 @@
     }
 
     .arrow {
-        font-size: 12px; /* размер стрелки */
+        font-size: 12px;
+        /* размер стрелки */
     }
 
     .dropdown-menu {

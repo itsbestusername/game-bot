@@ -34,6 +34,7 @@ html {
     text-decoration: none;
     position: relative;
     color: white;
+    white-space: nowrap;
 }
 
 .menu-list-item a::after {
@@ -61,9 +62,18 @@ html {
     position: relative;
 }
 
-@media (max-width:1440px) {
+@media (max-width:1700px) {
     .header-container {
         padding: 2% 10%;
+    }
+
+    .header-logo {
+        font-size: 28px;
+    }
+
+    .menu-list {
+        gap: 20px;
+        font-size: 22px;
     }
 }
 
@@ -72,29 +82,37 @@ html {
         padding: 2% 5%;
     }
 
+    .header-logo {
+        font-size: 24px;
+    }
+
     .menu-list {
-        font-size: clamp(1rem, 0rem + 1.5625vw, 1.25rem);
+        gap: 25px;
+        font-size: clamp(0.875rem, 0.5rem + 0.5vw, 1.25rem);
     }
 }
 
-@media (max-width:1024px) {
-    .header-logo {
-        font-size: clamp(1.625rem, -0.25rem + 3.9063vw, 2.25rem);
+@media (max-width:900px) {
+    .header-container {
+        gap: 30px;
+        padding: 2% 5%;
     }
 
     .menu-list {
-        gap: 35px;
+        gap: 15px;
+        font-size: 16px;
     }
 }
 
 @media (max-width:780px) {
     .header-container {
         padding: 10px;
-        gap: 55px;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .header-logo {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .menu-list {
@@ -103,5 +121,27 @@ html {
         gap: 5px;
         font-size: 12px;
         margin-left: 0;
+        order: 3;
+        width: 100%;
+    }
+
+    .language-dropdown {
+        order: 2;
+    }
+}
+
+@media (max-width:480px) {
+    .header-container {
+        padding: 8px;
+        gap: 15px;
+    }
+
+    .header-logo {
+        font-size: 18px;
+    }
+
+    .menu-list {
+        font-size: 11px;
+        gap: 3px;
     }
 }

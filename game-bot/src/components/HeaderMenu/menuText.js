@@ -4,10 +4,12 @@ export const menuText = {
 		home: 'Главная',
 		features: 'Особенности',
 		tariffs: 'Тарифы',
+		solver: 'Решить головоломку',
 	},
 	en: {
 		home: 'Home',
 		features: 'Features',
 		tariffs: 'Tariffs',
+		solver: 'Water solver',
 	},
 };
