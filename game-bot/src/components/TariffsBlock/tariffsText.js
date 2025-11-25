@@ -12,7 +12,7 @@ export const tariffsText = {
 export const tariffDataMini = {
 	ru: {
 		background: 'linear-gradient(45deg, #9296D5, #4C4E6F)',
-		tariffName: '1 день',
+		tariffName: '5 дней',
 		functions: [
 			{ name: 'Весь функционал бота', available: true },
 			{ name: 'Запуск из телеграма', available: true },
@@ -23,7 +23,7 @@ export const tariffDataMini = {
 	},
 	en: {
 		background: 'linear-gradient(45deg,  #9296D5, #4C4E6F)',
-		tariffName: '1 day',
+		tariffName: '5 days',
 		functions: [
 			{ name: 'All bot features', available: true },
 			{ name: 'Start from telegram', available: true },

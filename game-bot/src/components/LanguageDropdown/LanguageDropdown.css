@@ -41,7 +41,7 @@
     background-color: #211F1F;
     opacity: 0.8;
     border-radius: 4px;
-    width: 123px;
+    width: 100%;
     z-index: 100;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -84,10 +84,6 @@
         /* размер стрелки */
     }
 
-    .dropdown-menu {
-        width: 66px;
-    }
-
     .dropdown-item {
         gap: 5px;
         font-size: 12px;
@@ -113,10 +109,6 @@
     .arrow {
         font-size: 12px;
         /* размер стрелки */
-    }
-
-    .dropdown-menu {
-        width: 66px;
     }
 
     .dropdown-item {

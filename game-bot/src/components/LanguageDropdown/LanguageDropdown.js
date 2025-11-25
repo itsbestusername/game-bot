@@ -36,7 +36,7 @@ export const LanguageDropdown = ({ language, onLanguageChange }) => {
 							alt="USA Flag"
 							className="flag-icon"
 						/>
-						<p className="language-name">ENG</p>
+						<p className="language-name">EN</p>
 					</>
 				)}
 				<span className="arrow">{isDropdownOpen ? '▲' : '▼'}</span>
@@ -64,7 +64,7 @@ export const LanguageDropdown = ({ language, onLanguageChange }) => {
 							alt="USA Flag"
 							className="flag-icon"
 						/>
-						ENG
+						EN
 					</div>
 				</div>
 			)}
