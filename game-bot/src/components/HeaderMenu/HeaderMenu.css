@@ -1,8 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
-
 .header-container {
     background: linear-gradient(to right, #211F1F, #323144);
     text-transform: uppercase;
@@ -21,6 +16,7 @@ html {
 .header-logo {
     font-size: clamp(2.25rem, 1.7849rem + 0.3876vw, 2.875rem);
     color: #CF4D4F;
+    text-decoration: none;
 }
 
 .menu-list {

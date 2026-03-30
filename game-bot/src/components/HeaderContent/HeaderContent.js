@@ -23,7 +23,11 @@ export const HeaderContent = ({ language }) => {
 					<ButtonsArea language={language} />
 				</div>
 				<div className="img-area">
-					<img className="hero-img" src={heroes} alt="Бот для Puzzles &amp; Survival"></img>
+					<img
+						className="hero-img"
+						src={heroes}
+						alt="Бот для Puzzles &amp; Survival"
+					></img>
 				</div>
 			</div>
 		</div>

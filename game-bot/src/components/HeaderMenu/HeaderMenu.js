@@ -1,44 +1,47 @@
 import './HeaderMenu.css';
+import { NavLink } from 'react-router-dom';
 import { LanguageDropdown } from '../LanguageDropdown/LanguageDropdown';
 import { menuText } from './menuText';
 
-export const HeaderMenu = ({ activeSection, language, onLanguageChange }) => {
+export const HeaderMenu = ({ language, onLanguageChange }) => {
 	return (
 		<nav className="header-container">
-			<p className="header-logo">ZEON</p>
+			<NavLink to="/" className="header-logo">
+				ЗЕОН
+			</NavLink>
 			<ul className="menu-list">
 				<li className="menu-list-item">
-					<a
-						className={activeSection === 'home' ? 'active' : ''}
-						href="#home"
+					<NavLink
+						to="/"
+						className={({ isActive }) => (isActive ? 'active' : '')}
+						end
 					>
 						{menuText[language].home}
-					</a>
+					</NavLink>
 				</li>
 				<li className="menu-list-item">
-					<a
-						className={activeSection === 'features' ? 'active' : ''}
-						href="#features"
+					<NavLink
+						to="/features"
+						className={({ isActive }) => (isActive ? 'active' : '')}
 					>
 						{menuText[language].features}
-					</a>
+					</NavLink>
 				</li>
 				<li className="menu-list-item">
-					<a
-						className={activeSection === 'tariffs' ? 'active' : ''}
-						href="#tariffs"
+					<NavLink
+						to="/tariffs"
+						className={({ isActive }) => (isActive ? 'active' : '')}
 					>
 						{menuText[language].tariffs}
-					</a>
+					</NavLink>
 				</li>
 				<li className="menu-list-item">
-					<a
-						href="https://www.zeonbot.ru/solver/index.html"
-						target="_blank"
-						rel="noopener noreferrer" пше
+					<NavLink
+						to="/solver"
+						className={({ isActive }) => (isActive ? 'active' : '')}
 					>
 						{menuText[language].solver}
-					</a>
+					</NavLink>
 				</li>
 			</ul>
 			<LanguageDropdown

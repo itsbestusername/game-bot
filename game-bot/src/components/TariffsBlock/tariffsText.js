@@ -1,11 +1,13 @@
 export const tariffsText = {
 	ru: {
 		title: 'Тарифы',
-		aboutPrice: '*ориентировочная стоимость для вашего региона. Цена зависит от способа покупки. Лучшая цена на покупку будет в Telegram на Android или Windows',
+		aboutPrice:
+			'*ориентировочная стоимость для вашего региона. Цена зависит от способа покупки. Лучшая цена на покупку будет в Telegram на Android или Windows',
 	},
 	en: {
 		title: 'Tariffs',
-		aboutPrice: 'approximate cost for your region. The price depends on the method of purchase. The best price for purchase will be in Telegram on Android or Windows',
+		aboutPrice:
+			'approximate cost for your region. The price depends on the method of purchase. The best price for purchase will be in Telegram on Android or Windows',
 	},
 };
 
@@ -43,7 +45,7 @@ export const tariffDataStandart = {
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
 		],
-		price: 'от 1200 руб',
+		price: 'от 700 руб',
 		button: 'Подробнее',
 	},
 	en: {
@@ -54,7 +56,7 @@ export const tariffDataStandart = {
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
 		],
-		price: 'from 15$',
+		price: 'from 8$',
 		button: 'More details',
 	},
 };
@@ -68,7 +70,7 @@ export const tariffDataPremium = {
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
 		],
-		price: 'от 4000 руб',
+		price: 'от 2500 руб',
 		button: 'Подробнее',
 	},
 	en: {
@@ -79,7 +81,7 @@ export const tariffDataPremium = {
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
 		],
-		price: 'from 50$',
+		price: 'from 25$',
 		button: 'More details',
 	},
 };

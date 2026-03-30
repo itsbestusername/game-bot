@@ -1,0 +1,130 @@
+.legal-page {
+	padding: 120px 20% 60px;
+	min-height: 100vh;
+	text-align: left;
+}
+
+.legal-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+	color: #CF4D4F;
+	margin-bottom: 8px;
+}
+
+.legal-date {
+	font-family: 'Manrope', sans-serif;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 40px;
+}
+
+.legal-section {
+	margin-bottom: 30px;
+}
+
+.legal-subtitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(1rem, 0.8rem + 0.5vw, 1.5rem);
+	color: white;
+	margin-bottom: 12px;
+}
+
+.legal-subsubtitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: clamp(0.875rem, 0.75rem + 0.3vw, 1.125rem);
+	color: rgba(255, 255, 255, 0.9);
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+
+.legal-text {
+	font-family: 'Manrope', sans-serif;
+	font-size: clamp(0.875rem, 0.75rem + 0.3vw, 1.125rem);
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.7;
+	margin-bottom: 8px;
+}
+
+.legal-list {
+	list-style-type: disc;
+	padding-left: 24px;
+	margin-bottom: 12px;
+}
+
+.legal-list li {
+	font-family: 'Manrope', sans-serif;
+	font-size: clamp(0.875rem, 0.75rem + 0.3vw, 1.125rem);
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.7;
+	margin-bottom: 4px;
+}
+
+.legal-table-wrapper {
+	overflow-x: auto;
+	margin: 16px 0;
+}
+
+.legal-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: 'Manrope', sans-serif;
+	font-size: clamp(0.75rem, 0.65rem + 0.25vw, 0.9375rem);
+}
+
+.legal-table th,
+.legal-table td {
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 10px 12px;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.5;
+}
+
+.legal-table th {
+	background: rgba(255, 255, 255, 0.05);
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 600;
+}
+
+.legal-table tr:nth-child(even) {
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.legal-contacts {
+	margin-top: 12px;
+}
+
+.legal-contacts .legal-text {
+	margin-bottom: 4px;
+}
+
+.legal-link {
+	color: #E96F05;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+	color: #CF4D4F;
+}
+
+@media (max-width: 1280px) {
+	.legal-page {
+		padding: 120px 10% 60px;
+	}
+}
+
+@media (max-width: 780px) {
+	.legal-page {
+		padding: 100px 5% 60px;
+	}
+
+	.legal-table {
+		font-size: 12px;
+	}
+
+	.legal-table th,
+	.legal-table td {
+		padding: 8px;
+	}
+}

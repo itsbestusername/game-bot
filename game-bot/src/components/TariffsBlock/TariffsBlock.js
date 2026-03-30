@@ -28,7 +28,9 @@ export const TariffsBlock = ({ language }) => {
 				/>
 			</div>
 			<div className="tariffs-price_area">
-				<p className="tariffs-price_about">{tariffsText[language].aboutPrice}</p>
+				<p className="tariffs-price_about">
+					{tariffsText[language].aboutPrice}
+				</p>
 			</div>
 		</div>
 	);

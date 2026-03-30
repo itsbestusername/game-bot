@@ -1,0 +1,12 @@
+.solver-page {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.solver-iframe {
+	width: 100%;
+	height: calc(100vh - 150px);
+	border: none;
+	background: transparent;
+}

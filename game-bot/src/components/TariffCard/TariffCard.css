@@ -1,5 +1,5 @@
 .tariff_area {
-    width: 385px;
+    width: 320px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -8,15 +8,15 @@
 
 .card_back-block {
     width: 100%;
-    height: 100px;
+    height: 90px;
     border-radius: 22px;
     display: flex;
     justify-content: center;
-    padding-top: 17px;
+    padding-top: 15px;
 }
 
 .card-title {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -26,23 +26,23 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 380px;
+    height: auto;
     background-color: white;
     border-radius: 22px;
     color: black;
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
     z-index: 2;
-    top: -35px;
-    padding-top: 6%;
+    top: -30px;
+    padding: 20px 30px;
 }
 
 .card-list {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 16px;
     align-items: start;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 
 .card-item {
@@ -57,35 +57,64 @@
 .icon-available {
     color: green;
     line-height: 1;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .card-price {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 18px;
-    font-size: 36px;
+    margin-top: 14px;
+    font-size: 28px;
     font-weight: 600;
 }
 
 .tariff-button {
-    margin-top: 24px;
+    margin-top: 18px;
+    max-width: 240px;
+    width: 100%;
 }
 
-
-@media (max-width: 1440px) {
+/* ===== Medium desktops ===== */
+@media (max-width: 1280px) {
     .tariff_area {
-        width: 350px;
-        gap: 0px;
+        width: 280px;
     }
 
-    .card_back-block {
-        height: 100px;
-        padding-top: 2%;
+    .card-title {
+        font-size: 22px;
     }
 
     .card_area {
-        padding: 18px 36px;
-        top: -35px;
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+
+    .card-list {
+        gap: 12px;
+    }
+
+    .card-price {
+        font-size: 22px;
+    }
+}
+
+/* ===== Small desktops ===== */
+@media (max-width: 1025px) {
+    .tariff_area {
+        width: 250px;
+    }
+
+    .card_back-block {
+        height: 80px;
+        padding-top: 12px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card_area {
+        padding: 14px 18px;
+        font-size: 13px;
     }
 
     .card-list {
@@ -93,100 +122,92 @@
     }
 
     .card-price {
-        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .icon-available {
+        font-size: 20px;
+    }
+}
+
+/* ===== Stacked (tablets & mobile) ===== */
+@media (max-width: 980px) {
+    .tariff_area {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .card_area {
+        padding: 20px 30px;
+        font-size: 15px;
+    }
+
+    .card-title {
         font-size: 24px;
     }
 
-    .tariff-button {
-        margin-top: 14px;
-    }
-
-    .tariff-button {
-        width: 276px;
-        height: 65px;
+    .card-price {
+        font-size: 24px;
     }
 }
 
-@media (max-width:1280px) {
-    .card-title {
-        font-size: 28px;
-    }
-
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
     .tariff_area {
-        min-width: 300px;
-        max-width: 350px;
-    }
-
-    .card_area {
-        height: auto;
-    }
-
-    .card-item {
-        font-size: clamp(1rem, 0rem + 1.5625vw, 1.25rem);
-    }
-}
-
-@media (max-width:1025px) {
-    .tariff_area {
-        min-width: 250px;
-        max-width: 300px;
-    }
-}
-
-@media (max-width:480px) {
-    .tariff_area {
-        width: 345px;
-        min-height: 400px;
+        max-width: 100%;
     }
 
     .card_back-block {
-        padding-top: 15px;
-        height: 85px;
+        height: 75px;
+        padding-top: 12px;
     }
 
     .card_area {
-        padding: 23px 20px;
+        padding: 18px 16px;
         font-size: 13px;
-        height: auto;
     }
 
     .card-title {
         font-size: 20px;
     }
 
-    .icon-available {
-        font-size: 22px;
-    }
-
     .card-price {
-        font-size: 22px;
+        font-size: 20px;
     }
 
-    .card-price_about {
-        width: 100%;
+    .icon-available {
+        font-size: 20px;
     }
 }
 
-@media (min-width:2100px) {
-
+/* ===== Ultra-wide ===== */
+@media (min-width: 2100px) {
     .tariff_area {
-        width: 450px;
+        width: 420px;
     }
 
-    .card_area {
-        top: -25px;
-        height: 450px;
+    .card_back-block {
+        height: 110px;
     }
 
     .card-title {
-        font-size: 35px;
+        font-size: 32px;
     }
 
-    .card-item {
-        font-size: 24px;
+    .card_area {
+        padding: 24px 40px;
+        font-size: 20px;
+    }
+
+    .card-list {
+        gap: 20px;
     }
 
     .card-price {
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    .card-item {
+        font-size: 20px;
     }
 }

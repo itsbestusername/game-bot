@@ -1,5 +1,5 @@
 import './ButtonsArea.css';
-import { buttonsText, } from './buttonsText';
+import { buttonsText } from './buttonsText';
 
 export const ButtonsArea = ({ language }) => {
 	return (

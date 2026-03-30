@@ -1,7 +1,8 @@
 .buttons_area {
     display: flex;
-    gap: 45px;
+    gap: 20px;
     margin-top: 6%;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -13,11 +14,11 @@
     justify-content: center;
     gap: 15px;
     cursor: pointer;
-    width: 305px;
-    height: 71px;
+    width: 260px;
+    height: 60px;
     border-radius: 10px;
-    position: relative; 
-    z-index: 1; /* Кнопки должны быть выше по слоям */
+    position: relative;
+    z-index: 1;
 }
 
 .button-video {
