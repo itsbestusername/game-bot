@@ -16,19 +16,21 @@ export const Footer = ({ language }) => {
 						{text.privacy}
 					</Link>
 				</div>
-				<div className="footer-info">
-						<p className="footer-text">Самозанятый: Ким Е.А.</p>
-						<p className="footer-text">ИНН: 100128640335</p>
-						<p className="footer-text">
-							<a
-								href="mailto:support@zeonbot.com"
-								className="footer-link"
-							>
-								support@zeonbot.com
-							</a>
-						</p>
-					</div>
+				<div className="footer-info-left">
+					<p className="footer-text">Самозанятый: Ким Е.А.</p>
+					<p className="footer-text">ИНН: 100128640335</p>
+				</div>
+				<div className="footer-info-right">
+					<p className="footer-text">
+						<a
+							href="mailto:support@zeonbot.com"
+							className="footer-link"
+						>
+							support@zeonbot.com
+						</a>
+					</p>
 					<p className="footer-text">&copy; 2025 ЗЕОН</p>
+				</div>
 			</div>
 		</footer>
 	);

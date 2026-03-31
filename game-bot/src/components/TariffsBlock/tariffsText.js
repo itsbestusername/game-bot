@@ -45,7 +45,7 @@ export const tariffDataStandart = {
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
 		],
-		price: 'от 700 руб',
+		price: '700 руб',
 		button: 'Подробнее',
 	},
 	en: {
@@ -56,7 +56,7 @@ export const tariffDataStandart = {
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
 		],
-		price: 'from 8$',
+		price: '8$',
 		button: 'More details',
 	},
 };
@@ -70,7 +70,7 @@ export const tariffDataPremium = {
 			{ name: 'Запуск из телеграма', available: true },
 			{ name: 'Техподдержка', available: true },
 		],
-		price: 'от 2500 руб',
+		price: '2500 руб',
 		button: 'Подробнее',
 	},
 	en: {
@@ -81,7 +81,7 @@ export const tariffDataPremium = {
 			{ name: 'Start from telegram', available: true },
 			{ name: 'Technical support', available: true },
 		],
-		price: 'from 25$',
+		price: '25$',
 		button: 'More details',
 	},
 };

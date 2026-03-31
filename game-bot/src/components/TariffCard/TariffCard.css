@@ -30,7 +30,7 @@
     background-color: white;
     border-radius: 22px;
     color: black;
-    font-size: 15px;
+    font-size: clamp(0.75rem, 0.55rem + 0.3vw, 0.9rem);
     position: relative;
     z-index: 2;
     top: -30px;
@@ -154,7 +154,7 @@
 /* ===== Mobile ===== */
 @media (max-width: 480px) {
     .tariff_area {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .card_back-block {

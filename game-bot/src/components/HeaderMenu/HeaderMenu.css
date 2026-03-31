@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2% 20%;
+    padding: clamp(8px, 1.2vh, 20px) 20%;
     z-index: 10;
 }
 
@@ -58,9 +58,39 @@
     position: relative;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1.5px solid #CF4D4F;
+    border-radius: 4px;
+    min-width: 123px;
+    min-height: 58px;
+    padding: 5%;
+    transition: background-color 0.25s ease;
+}
+
+.header-login-btn:hover {
+    background-color: #CF4D4F;
+}
+
 @media (max-width:1700px) {
     .header-container {
-        padding: 2% 10%;
+        padding: clamp(8px, 1vh, 16px) 10%;
     }
 
     .header-logo {
@@ -71,11 +101,17 @@
         gap: 20px;
         font-size: 22px;
     }
+
+    .header-login-btn {
+        min-width: 86px;
+        min-height: 46px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width:1280px) {
     .header-container {
-        padding: 2% 5%;
+        padding: clamp(6px, 1vh, 14px) 5%;
     }
 
     .header-logo {
@@ -91,7 +127,7 @@
 @media (max-width:900px) {
     .header-container {
         gap: 30px;
-        padding: 2% 5%;
+        padding: clamp(6px, 1vh, 12px) 5%;
     }
 
     .menu-list {
@@ -100,11 +136,64 @@
     }
 }
 
+@media (max-width:1024px) {
+    .header-login-btn {
+        min-width: 66px;
+        min-height: 36px;
+        font-size: 11px;
+    }
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #211F1F, #323144);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 0 14px;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.mobile-nav-list li a {
+    display: block;
+    padding: 12px 0;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: color 0.2s ease;
+}
+
+.mobile-nav-list li:last-child a {
+    border-bottom: none;
+}
+
+.mobile-nav-list li a:hover,
+.mobile-nav-list li a.active {
+    color: #E96F05;
+}
+
+.mobile-nav-divider a {
+    margin-top: 6px;
+}
+
 @media (max-width:780px) {
     .header-container {
         padding: 10px;
-        gap: 20px;
-        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .header-logo {
@@ -112,32 +201,59 @@
     }
 
     .menu-list {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        font-size: 12px;
-        margin-left: 0;
-        order: 3;
-        width: 100%;
+        display: none;
     }
 
-    .language-dropdown {
-        order: 2;
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+
+    .hamburger-line {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: white;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    .hamburger-btn.open .hamburger-line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger-btn.open .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-btn.open .hamburger-line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
     }
 }
 
 @media (max-width:480px) {
     .header-container {
         padding: 8px;
-        gap: 15px;
+        gap: 8px;
     }
 
     .header-logo {
         font-size: 18px;
     }
 
-    .menu-list {
-        font-size: 11px;
-        gap: 3px;
+    .header-login-btn {
+        min-width: 56px;
+        min-height: 32px;
+        font-size: 10px;
     }
 }

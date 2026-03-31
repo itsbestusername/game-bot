@@ -20,8 +20,8 @@
     background-image: url(../../images/background/features-back-circle.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 5vw;
-    height: 23vh;
+    width: 6vw;
+    height: 26vh;
     position: absolute;
     right: 1%;
     top: 40%;
@@ -32,11 +32,11 @@
 .features-img {
     width: 25vw;
     height: 72vh;
-    margin-top: 15px; 
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .feature-image-item {
@@ -112,7 +112,7 @@
     cursor: pointer;
     padding-left: 30px;
     transition: color 0.3s, font-size 0.3s;
-    font-size: 16px;
+    font-size: clamp(0.75rem, 0.55rem + 0.3vw, 0.9rem);
     color: #ffffff;
     text-align: left;
 }
@@ -139,10 +139,6 @@
 }
 
 @media (max-width:1919px) {
-    .features-title {
-        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
-    }
-
     .features-list {
         gap: 30px;
     }
@@ -158,10 +154,6 @@
     .features-block {
         padding-top: 3%;
     }
-
-    .features-title {
-        font-size: clamp(2.5rem, 1rem + 1.6667vw, 3rem);
-    }
 }
 
 @media (max-width:1280px) {
@@ -172,9 +164,9 @@
     .features-content {
         max-width: 500px;
     }
-    
+
     .features-title {
-        font-size: clamp(2rem, 0.5rem + 2.3438vw, 2.375rem);
+        font-size: clamp(1.5rem, 0.5rem + 1.8vw, 2rem);
     }
 
     .features-title::before {
@@ -188,34 +180,42 @@
     }
 
     .features-list-item {
-        font-size: clamp(1rem, 0rem + 1.5625vw, 1.25rem);
+        font-size: clamp(0.8rem, 0.4rem + 0.8vw, 1rem);
     }
 }
 
 @media (max-width:1024px) {
     .features-container {
-        gap: 60px;
+        gap: 40px;
     }
 
     .features-content {
-        gap: 35px;
+        gap: 20px;
+        max-width: 420px;
     }
 
     .features-title {
-        font-size: clamp(1.75rem, 1.6055rem + 0.6163vw, 2rem);
+        font-size: clamp(1.25rem, 0.8rem + 1vw, 1.6rem);
+    }
+
+    .features-list-item {
+        font-size: clamp(0.75rem, 0.5rem + 0.6vw, 0.9rem);
+        padding-left: 20px;
     }
 
     .features-img {
+        width: 28vw;
         height: 54vh;
     }
 }
 
 @media (max-width:920px) {
     .features-container {
-        gap: 40px;
+        gap: 25px;
     }
+
     .features-content {
-        max-width: 475px;
+        max-width: 400px;
     }
 }
 
@@ -378,11 +378,15 @@
 
 @media (min-width: 2100px) {
     .features-title {
-        font-size: 64px;
+        font-size: clamp(3rem, 2.5rem + 0.5vw, 3.5rem);
     }
 
     .features-list-item {
-        font-size: 24px;
+        font-size: clamp(1.125rem, 1rem + 0.3vw, 1.375rem);
+    }
+
+    .features-list {
+        gap: 20px;
     }
 }
 
@@ -396,3 +400,4 @@
         bottom: -474px;
     }
 }
+
